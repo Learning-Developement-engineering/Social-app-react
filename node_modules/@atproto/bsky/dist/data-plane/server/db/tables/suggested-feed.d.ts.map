@@ -1,0 +1,1 @@
+{"version":3,"file":"suggested-feed.d.ts","sourceRoot":"","sources":["../../../../../src/data-plane/server/db/tables/suggested-feed.ts"],"names":[],"mappings":"AAAA,eAAO,MAAM,SAAS,mBAAmB,CAAA;AAEzC,MAAM,WAAW,aAAa;IAC5B,GAAG,EAAE,MAAM,CAAA;IACX,KAAK,EAAE,MAAM,CAAA;CACd;AAED,MAAM,MAAM,SAAS,GAAG;IACtB,CAAC,SAAS,CAAC,EAAE,aAAa,CAAA;CAC3B,CAAA"}

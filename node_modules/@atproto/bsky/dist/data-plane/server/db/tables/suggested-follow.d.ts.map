@@ -1,0 +1,1 @@
+{"version":3,"file":"suggested-follow.d.ts","sourceRoot":"","sources":["../../../../../src/data-plane/server/db/tables/suggested-follow.ts"],"names":[],"mappings":"AAAA,eAAO,MAAM,SAAS,qBAAqB,CAAA;AAE3C,MAAM,WAAW,eAAe;IAC9B,GAAG,EAAE,MAAM,CAAA;IACX,KAAK,EAAE,MAAM,CAAA;CACd;AAED,MAAM,MAAM,SAAS,GAAG;IACtB,CAAC,SAAS,CAAC,EAAE,eAAe,CAAA;CAC7B,CAAA"}

@@ -1,0 +1,34 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.VERIFY_ALGOS = void 0;
+exports.randomBuffer = randomBuffer;
+exports.randomHexId = randomHexId;
+const node_crypto_1 = require("node:crypto");
+async function randomBuffer(bytesLength = 16) {
+    return new Promise((resolve, reject) => {
+        (0, node_crypto_1.randomBytes)(bytesLength, (err, buf) => {
+            if (err)
+                return reject(err);
+            resolve(buf);
+        });
+    });
+}
+async function randomHexId(bytesLength = 16) {
+    const buffer = await randomBuffer(bytesLength);
+    return buffer.toString('hex');
+}
+// Basically all algorithms supported by "jose"'s jwtVerify().
+// @TODO Is there a way to get this list from the runtime instead of hardcoding it?
+exports.VERIFY_ALGOS = [
+    'RS256',
+    'RS384',
+    'RS512',
+    'PS256',
+    'PS384',
+    'PS512',
+    'ES256',
+    'ES256K',
+    'ES384',
+    'ES512',
+];
+//# sourceMappingURL=crypto.js.map

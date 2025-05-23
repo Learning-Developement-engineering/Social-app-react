@@ -1,0 +1,1 @@
+{"version":3,"file":"provider.d.ts","sourceRoot":"","sources":["../../../src/db/migrations/provider.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,iBAAiB,EAAE,MAAM,QAAQ,CAAA;AAErD,qBAAa,mBAAoB,YAAW,iBAAiB;IAC/C,OAAO,CAAC,UAAU;gBAAV,UAAU,EAAE,MAAM,CAAC,MAAM,EAAE,SAAS,CAAC;IACnD,aAAa,IAAI,OAAO,CAAC,MAAM,CAAC,MAAM,EAAE,SAAS,CAAC,CAAC;CAG1D"}

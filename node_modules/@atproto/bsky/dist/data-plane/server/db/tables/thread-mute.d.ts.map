@@ -1,0 +1,1 @@
+{"version":3,"file":"thread-mute.d.ts","sourceRoot":"","sources":["../../../../../src/data-plane/server/db/tables/thread-mute.ts"],"names":[],"mappings":"AAAA,eAAO,MAAM,SAAS,gBAAgB,CAAA;AAEtC,MAAM,WAAW,UAAU;IACzB,OAAO,EAAE,MAAM,CAAA;IACf,UAAU,EAAE,MAAM,CAAA;IAClB,SAAS,EAAE,MAAM,CAAA;CAClB;AAED,MAAM,MAAM,SAAS,GAAG;IAAE,CAAC,SAAS,CAAC,EAAE,UAAU,CAAA;CAAE,CAAA"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"authorization-result-redirect.d.ts","sourceRoot":"","sources":["../../src/result/authorization-result-redirect.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,mCAAmC,EAAE,MAAM,sBAAsB,CAAA;AAC1E,OAAO,EAAE,+BAA+B,EAAE,MAAM,wCAAwC,CAAA;AAExF,MAAM,MAAM,2BAA2B,GAAG;IACxC,MAAM,EAAE,MAAM,CAAA;IACd,UAAU,EAAE,mCAAmC,CAAA;IAC/C,QAAQ,EAAE,+BAA+B,CAAA;CAC1C,CAAA"}
