@@ -1,0 +1,1 @@
+{"version":3,"file":"embed-tagger.d.ts","sourceRoot":"","sources":["../../src/tag-service/embed-tagger.ts"],"names":[],"mappings":"AASA,OAAO,EAAE,aAAa,EAAE,MAAM,kBAAkB,CAAA;AAEhD,qBAAa,WAAY,SAAQ,aAAa;IAC5C,SAAS,SAAW;IAEpB,YAAY,IAAI,OAAO;IASjB,SAAS,IAAI,OAAO,CAAC,MAAM,EAAE,CAAC;IAmC9B,cAAc,IAAI,OAAO,CAAC,MAAM,CAAC,MAAM,EAAE,OAAO,CAAC,GAAG,SAAS,CAAC;CAWrE"}

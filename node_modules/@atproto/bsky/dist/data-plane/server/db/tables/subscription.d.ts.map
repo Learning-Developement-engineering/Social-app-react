@@ -1,0 +1,1 @@
+{"version":3,"file":"subscription.d.ts","sourceRoot":"","sources":["../../../../../src/data-plane/server/db/tables/subscription.ts"],"names":[],"mappings":"AAAA,eAAO,MAAM,SAAS,iBAAiB,CAAA;AAEvC,MAAM,WAAW,YAAY;IAC3B,OAAO,EAAE,MAAM,CAAA;IACf,MAAM,EAAE,MAAM,CAAA;IACd,KAAK,EAAE,MAAM,CAAA;CACd;AAED,MAAM,MAAM,SAAS,GAAG;IAAE,CAAC,SAAS,CAAC,EAAE,YAAY,CAAA;CAAE,CAAA"}

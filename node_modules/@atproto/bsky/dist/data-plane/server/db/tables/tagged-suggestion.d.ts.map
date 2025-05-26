@@ -1,0 +1,1 @@
+{"version":3,"file":"tagged-suggestion.d.ts","sourceRoot":"","sources":["../../../../../src/data-plane/server/db/tables/tagged-suggestion.ts"],"names":[],"mappings":"AAAA,eAAO,MAAM,SAAS,sBAAsB,CAAA;AAE5C,MAAM,WAAW,gBAAgB;IAC/B,GAAG,EAAE,MAAM,CAAA;IACX,OAAO,EAAE,MAAM,CAAA;IACf,WAAW,EAAE,MAAM,CAAA;CACpB;AAED,MAAM,MAAM,SAAS,GAAG;IACtB,CAAC,SAAS,CAAC,EAAE,gBAAgB,CAAA;CAC9B,CAAA"}

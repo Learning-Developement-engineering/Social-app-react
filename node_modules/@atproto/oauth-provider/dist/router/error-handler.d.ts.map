@@ -1,0 +1,1 @@
+{"version":3,"file":"error-handler.d.ts","sourceRoot":"","sources":["../../src/router/error-handler.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,eAAe,EAAE,cAAc,EAAE,MAAM,WAAW,CAAA;AAEhE,MAAM,MAAM,YAAY,CACtB,GAAG,SAAS,eAAe,GAAG,eAAe,EAC7C,GAAG,SAAS,cAAc,GAAG,cAAc,IACzC,CAAC,GAAG,EAAE,GAAG,EAAE,GAAG,EAAE,GAAG,EAAE,GAAG,EAAE,OAAO,EAAE,OAAO,EAAE,MAAM,KAAK,IAAI,CAAA"}

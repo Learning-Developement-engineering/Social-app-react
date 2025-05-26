@@ -1,0 +1,1 @@
+{"version":3,"file":"follows.d.ts","sourceRoot":"","sources":["../../../../src/data-plane/server/routes/follows.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,qBAAqB,CAAA;AAEjD,OAAO,EAAE,OAAO,EAAE,MAAM,6BAA6B,CAAA;AAErD,OAAO,EAAE,QAAQ,EAAE,MAAM,OAAO,CAAA;yBAGhB,IAAI,QAAQ,KAAG,OAAO,CAAC,WAAW,CAAC,OAAO,OAAO,CAAC,CAAC;AAAnE,wBAqIE"}

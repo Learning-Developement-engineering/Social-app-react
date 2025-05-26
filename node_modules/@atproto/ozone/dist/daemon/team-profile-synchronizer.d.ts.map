@@ -1,0 +1,1 @@
+{"version":3,"file":"team-profile-synchronizer.d.ts","sourceRoot":"","sources":["../../src/daemon/team-profile-synchronizer.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,eAAe,EAAE,sBAAsB,EAAE,MAAM,eAAe,CAAA;AACvE,OAAO,EAAE,WAAW,EAAE,MAAM,SAAS,CAAA;AAErC,qBAAa,uBAAwB,SAAQ,sBAAsB;gBAE/D,eAAe,EAAE,eAAe,EAChC,WAAW,EAAE,WAAW,EACxB,QAAQ,SAAY;CAMvB"}

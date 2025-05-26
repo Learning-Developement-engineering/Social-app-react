@@ -1,0 +1,1 @@
+{"version":3,"file":"language-data.d.ts","sourceRoot":"","sources":["../../src/tag-service/language-data.ts"],"names":[],"mappings":"AACA,UAAU,QAAQ;IAChB,KAAK,EAAE,MAAM,CAAA;IACb,KAAK,EAAE,MAAM,CAAA;IACb,IAAI,EAAE,MAAM,CAAA;CACb;AAED,eAAO,MAAM,SAAS,EAAE,QAAQ,EA8hB/B,CAAA;AAED,eAAO,MAAM,mBAAmB;;CAE/B,CAAA;AAED,wBAAgB,YAAY,CAAC,IAAI,EAAE,MAAM,GAAG,MAAM,CAKjD"}

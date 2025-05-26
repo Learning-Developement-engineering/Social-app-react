@@ -1,0 +1,1 @@
+{"version":3,"file":"signing_key.d.ts","sourceRoot":"","sources":["../../../src/db/schema/signing_key.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,QAAQ,CAAA;AAElC,eAAO,MAAM,SAAS,gBAAgB,CAAA;AAEtC,MAAM,WAAW,UAAU;IACzB,EAAE,EAAE,SAAS,CAAC,MAAM,CAAC,CAAA;IACrB,GAAG,EAAE,MAAM,CAAA;CACZ;AAED,MAAM,MAAM,SAAS,GAAG;IAAE,CAAC,SAAS,CAAC,EAAE,UAAU,CAAA;CAAE,CAAA"}

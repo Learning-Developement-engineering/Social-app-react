@@ -1,0 +1,1 @@
+{"version":3,"file":"types.d.ts","sourceRoot":"","sources":["../../src/runner/types.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,WAAW;IAC1B,SAAS,IAAI,OAAO,CAAC,MAAM,GAAG,SAAS,CAAC,CAAA;IACxC,UAAU,CACR,GAAG,EAAE,MAAM,EACX,GAAG,EAAE,MAAM,EACX,OAAO,EAAE,MAAM,OAAO,CAAC,IAAI,CAAC,GAC3B,OAAO,CAAC,IAAI,CAAC,CAAA;CACjB"}

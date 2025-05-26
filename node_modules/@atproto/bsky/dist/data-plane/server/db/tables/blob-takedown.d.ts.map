@@ -1,0 +1,1 @@
+{"version":3,"file":"blob-takedown.d.ts","sourceRoot":"","sources":["../../../../../src/data-plane/server/db/tables/blob-takedown.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,YAAY;IAC3B,GAAG,EAAE,MAAM,CAAA;IACX,GAAG,EAAE,MAAM,CAAA;IACX,WAAW,EAAE,MAAM,CAAA;CACpB;AAED,eAAO,MAAM,SAAS,kBAAkB,CAAA;AAExC,MAAM,MAAM,SAAS,GAAG;IAAE,CAAC,SAAS,CAAC,EAAE,YAAY,CAAA;CAAE,CAAA"}
