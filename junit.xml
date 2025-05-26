@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuites name="jest tests" tests="608" failures="0" errors="0" time="6.574">
   <testsuite name="session" errors="0" failures="0" skipped="0" timestamp="2025-05-26T09:38:36" time="1.664" tests="14">
     <testcase classname="session can log in and out" name="session can log in and out" time="0.07">
@@ -31,6 +32,122 @@
     </testcase>
   </testsuite>
   <testsuite name="avoid-unwrapped-text" errors="0" failures="0" skipped="0" timestamp="2025-05-26T09:38:36" time="1.961" tests="85">
+=======
+<testsuites name="jest tests" tests="578" failures="0" errors="0" time="6.608">
+  <testsuite name="Sentry re-export" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:04" time="1.39" tests="2">
+    <testcase classname="Sentry re-export should export Sentry from @sentry/react-native" name="Sentry re-export should export Sentry from @sentry/react-native" time="0.827">
+    </testcase>
+    <testcase classname="Sentry re-export should have expected Sentry properties" name="Sentry re-export should have expected Sentry properties" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="session" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:04" time="1.913" tests="14">
+    <testcase classname="session can log in and out" name="session can log in and out" time="0.07">
+    </testcase>
+    <testcase classname="session switches to the latest account, stores all of them" name="session switches to the latest account, stores all of them" time="0.091">
+    </testcase>
+    <testcase classname="session can log back in after logging out" name="session can log back in after logging out" time="0.08">
+    </testcase>
+    <testcase classname="session can remove active account" name="session can remove active account" time="0.041">
+    </testcase>
+    <testcase classname="session can remove inactive account" name="session can remove inactive account" time="0.063">
+    </testcase>
+    <testcase classname="session can log out of the current account" name="session can log out of the current account" time="0.052">
+    </testcase>
+    <testcase classname="session updates stored account with refreshed tokens" name="session updates stored account with refreshed tokens" time="0.022">
+    </testcase>
+    <testcase classname="session bails out of update on identical objects" name="session bails out of update on identical objects" time="0.02">
+    </testcase>
+    <testcase classname="session accepts updates from a stale agent" name="session accepts updates from a stale agent" time="0.05">
+    </testcase>
+    <testcase classname="session ignores updates from a removed agent" name="session ignores updates from a removed agent" time="0.035">
+    </testcase>
+    <testcase classname="session ignores network errors" name="session ignores network errors" time="0.02">
+    </testcase>
+    <testcase classname="session resets tokens on expired event" name="session resets tokens on expired event" time="0.037">
+    </testcase>
+    <testcase classname="session resets tokens on created-failed event" name="session resets tokens on created-failed event" time="0.046">
+    </testcase>
+    <testcase classname="session replaces local accounts with synced accounts" name="session replaces local accounts with synced accounts" time="0.076">
+    </testcase>
+  </testsuite>
+  <testsuite name="detectLinkables" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:06" time="0.631" tests="33">
+    <testcase classname="detectLinkables correctly handles a set of text inputs" name="detectLinkables correctly handles a set of text inputs" time="0.014">
+    </testcase>
+    <testcase classname="makeRecordUri correctly builds a record URI" name="makeRecordUri correctly builds a record URI" time="0.319">
+    </testcase>
+    <testcase classname="makeValidHandle correctly parses and corrects handles" name="makeValidHandle correctly parses and corrects handles" time="0.001">
+    </testcase>
+    <testcase classname="createFullHandle correctly parses and corrects handles" name="createFullHandle correctly parses and corrects handles" time="0">
+    </testcase>
+    <testcase classname="enforceLen correctly enforces defined length on a given string" name="enforceLen correctly enforces defined length on a given string" time="0.001">
+    </testcase>
+    <testcase classname="cleanError removes extra content from error message" name="cleanError removes extra content from error message" time="0.011">
+    </testcase>
+    <testcase classname="toNiceDomain displays the url&apos;s host in a easily readable manner" name="toNiceDomain displays the url&apos;s host in a easily readable manner" time="0.004">
+    </testcase>
+    <testcase classname="toShortUrl shortens the url" name="toShortUrl shortens the url" time="0.003">
+    </testcase>
+    <testcase classname="toShareUrl appends https, when not present" name="toShareUrl appends https, when not present" time="0.001">
+    </testcase>
+    <testcase classname="shortenLinks correctly shortens rich text while preserving facet URIs" name="shortenLinks correctly shortens rich text while preserving facet URIs" time="0.017">
+    </testcase>
+    <testcase classname="parseEmbedPlayerFromUrl correctly grabs the correct id from uri" name="parseEmbedPlayerFromUrl correctly grabs the correct id from uri" time="0.038">
+    </testcase>
+    <testcase classname="createStarterPackLinkFromAndroidReferrer returns a link when input contains utm_source and utm_content" name="createStarterPackLinkFromAndroidReferrer returns a link when input contains utm_source and utm_content" time="0.001">
+    </testcase>
+    <testcase classname="createStarterPackLinkFromAndroidReferrer returns a link when input contains utm_source and utm_content in different order" name="createStarterPackLinkFromAndroidReferrer returns a link when input contains utm_source and utm_content in different order" time="0.002">
+    </testcase>
+    <testcase classname="createStarterPackLinkFromAndroidReferrer returns a link when input contains other parameters as well" name="createStarterPackLinkFromAndroidReferrer returns a link when input contains other parameters as well" time="0.001">
+    </testcase>
+    <testcase classname="createStarterPackLinkFromAndroidReferrer returns null when utm_source is not present" name="createStarterPackLinkFromAndroidReferrer returns null when utm_source is not present" time="0.001">
+    </testcase>
+    <testcase classname="createStarterPackLinkFromAndroidReferrer returns null when utm_content is not present" name="createStarterPackLinkFromAndroidReferrer returns null when utm_content is not present" time="0">
+    </testcase>
+    <testcase classname="createStarterPackLinkFromAndroidReferrer returns null when utm_content is malformed" name="createStarterPackLinkFromAndroidReferrer returns null when utm_content is malformed" time="0.001">
+    </testcase>
+    <testcase classname="parseStarterPackHttpUri returns a valid at uri when http uri is valid" name="parseStarterPackHttpUri returns a valid at uri when http uri is valid" time="0.002">
+    </testcase>
+    <testcase classname="parseStarterPackHttpUri returns null when there is no rkey" name="parseStarterPackHttpUri returns null when there is no rkey" time="0">
+    </testcase>
+    <testcase classname="parseStarterPackHttpUri returns null when there is an extra path" name="parseStarterPackHttpUri returns null when there is an extra path" time="0.001">
+    </testcase>
+    <testcase classname="parseStarterPackHttpUri returns null when there is no handle or rkey" name="parseStarterPackHttpUri returns null when there is no handle or rkey" time="0.003">
+    </testcase>
+    <testcase classname="parseStarterPackHttpUri returns null when the route is not /start or /starter-pack" name="parseStarterPackHttpUri returns null when the route is not /start or /starter-pack" time="0.001">
+    </testcase>
+    <testcase classname="parseStarterPackHttpUri returns the at uri when the input is a valid starterpack at uri" name="parseStarterPackHttpUri returns the at uri when the input is a valid starterpack at uri" time="0.001">
+    </testcase>
+    <testcase classname="parseStarterPackHttpUri returns null when the at uri has no rkey" name="parseStarterPackHttpUri returns null when the at uri has no rkey" time="0.001">
+    </testcase>
+    <testcase classname="parseStarterPackHttpUri returns null when the collection is not app.bsky.graph.starterpack" name="parseStarterPackHttpUri returns null when the collection is not app.bsky.graph.starterpack" time="0">
+    </testcase>
+    <testcase classname="parseStarterPackHttpUri returns null when the input is undefined" name="parseStarterPackHttpUri returns null when the input is undefined" time="0.004">
+    </testcase>
+    <testcase classname="createStarterPackGooglePlayUri returns valid google play uri when input is valid" name="createStarterPackGooglePlayUri returns valid google play uri when input is valid" time="0">
+    </testcase>
+    <testcase classname="createStarterPackGooglePlayUri returns null when no rkey is supplied" name="createStarterPackGooglePlayUri returns null when no rkey is supplied" time="0">
+    </testcase>
+    <testcase classname="createStarterPackGooglePlayUri returns null when no name or rkey are supplied" name="createStarterPackGooglePlayUri returns null when no name or rkey are supplied" time="0">
+    </testcase>
+    <testcase classname="createStarterPackGooglePlayUri returns null when rkey is supplied but no name" name="createStarterPackGooglePlayUri returns null when rkey is supplied but no name" time="0.003">
+    </testcase>
+    <testcase classname="forceLTR wraps string with LTR directional formatting characters" name="forceLTR wraps string with LTR directional formatting characters" time="0">
+    </testcase>
+    <testcase classname="forceLTR works with empty string" name="forceLTR works with empty string" time="0">
+    </testcase>
+    <testcase classname="forceLTR works with already formatted strings" name="forceLTR works with already formatted strings" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Session Logging" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:06" time="0.154" tests="3">
+    <testcase classname="Session Logging wrapSessionReducerForLogging should call reducer and log debug" name="Session Logging wrapSessionReducerForLogging should call reducer and log debug" time="0.003">
+    </testcase>
+    <testcase classname="Session Logging addSessionErrorLog should log session error when initialized" name="Session Logging addSessionErrorLog should log session error when initialized" time="0.053">
+    </testcase>
+    <testcase classname="Session Logging addSessionDebugLog slices large logs" name="Session Logging addSessionDebugLog slices large logs" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="avoid-unwrapped-text" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:04" time="2.226" tests="85">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;Text&gt;
   foo
@@ -39,7 +156,11 @@
 &lt;Text&gt;
   foo
 &lt;/Text&gt;
+<<<<<<< HEAD
         " time="0.774">
+=======
+        " time="0.876">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;Text&gt;
@@ -53,7 +174,11 @@
     foo
   &lt;/Trans&gt;
 &lt;/Text&gt;
+<<<<<<< HEAD
         " time="0.005">
+=======
+        " time="0.006">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;Text&gt;
@@ -111,7 +236,11 @@
 &lt;Trans&gt;
   {foo &amp;&amp; &lt;Text&gt;foo&lt;/Text&gt;}
 &lt;/Trans&gt;
+<<<<<<< HEAD
               " time="0.006">
+=======
+              " time="0.008">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;Trans&gt;
@@ -121,7 +250,11 @@
 &lt;Trans&gt;
   {foo ? &lt;Text&gt;foo&lt;/Text&gt; : &lt;Text&gt;bar&lt;/Text&gt;}
 &lt;/Trans&gt;
+<<<<<<< HEAD
               " time="0.004">
+=======
+              " time="0.005">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;CustomText&gt;
@@ -131,7 +264,11 @@
 &lt;CustomText&gt;
   foo
 &lt;/CustomText&gt;
+<<<<<<< HEAD
         " time="0.003">
+=======
+        " time="0.004">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;CustomText&gt;
@@ -155,7 +292,11 @@
 &lt;Text&gt;
   {bar}
 &lt;/Text&gt;
+<<<<<<< HEAD
         " time="0.009">
+=======
+        " time="0.01">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
@@ -165,6 +306,7 @@
 &lt;View&gt;
   {bar}
 &lt;/View&gt;
+<<<<<<< HEAD
         " time="0.004">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
@@ -203,11 +345,54 @@
     {bar}
   &lt;/Text&gt;
 &lt;/View&gt;
+=======
+        " time="0.003">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;Text&gt;
+  foo {bar}
+&lt;/Text&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;Text&gt;
+  foo {bar}
+&lt;/Text&gt;
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
         " time="0.005">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
   &lt;Text&gt;
+<<<<<<< HEAD
+=======
+    foo
+  &lt;/Text&gt;
+&lt;/View&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+  &lt;Text&gt;
+    foo
+  &lt;/Text&gt;
+&lt;/View&gt;
+        " time="0.003">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+  &lt;Text&gt;
+    {bar}
+  &lt;/Text&gt;
+&lt;/View&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+  &lt;Text&gt;
+    {bar}
+  &lt;/Text&gt;
+&lt;/View&gt;
+        " time="0.006">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+  &lt;Text&gt;
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     foo {bar}
   &lt;/Text&gt;
 &lt;/View&gt;
@@ -245,6 +430,7 @@
 }&gt;
   &lt;Bar /&gt;
 &lt;/View&gt;
+<<<<<<< HEAD
         " time="0.005">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
@@ -392,6 +578,155 @@ function MyText({ foo }) {
         " time="0.008">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+=======
+        " time="0.008">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View prop={
+  foo &amp;&amp; &lt;Text&gt;foo&lt;/Text&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/View&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View prop={
+  foo &amp;&amp; &lt;Text&gt;foo&lt;/Text&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/View&gt;
+        " time="0.003">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View prop={
+  foo ? &lt;Text&gt;foo&lt;/Text&gt; : &lt;Text&gt;bar&lt;/Text&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/View&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View prop={
+  foo ? &lt;Text&gt;foo&lt;/Text&gt; : &lt;Text&gt;bar&lt;/Text&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/View&gt;
+        " time="0.005">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View propText={
+  &lt;Trans&gt;&lt;Text&gt;foo&lt;/Text&gt;&lt;/Trans&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/View&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View propText={
+  &lt;Trans&gt;&lt;Text&gt;foo&lt;/Text&gt;&lt;/Trans&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/View&gt;
+        " time="0.008">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View prop={
+  &lt;Text&gt;&lt;Trans&gt;foo&lt;/Trans&gt;&lt;/Text&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/View&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View prop={
+  &lt;Text&gt;&lt;Trans&gt;foo&lt;/Trans&gt;&lt;/Text&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/View&gt;
+        " time="0.004">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;Foo propText={
+  &lt;Trans&gt;foo&lt;/Trans&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/Foo&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;Foo propText={
+  &lt;Trans&gt;foo&lt;/Trans&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/Foo&gt;
+        " time="0.003">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;Foo propText={
+  foo &amp;&amp; &lt;Trans&gt;foo&lt;/Trans&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/Foo&gt;
+              " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;Foo propText={
+  foo &amp;&amp; &lt;Trans&gt;foo&lt;/Trans&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/Foo&gt;
+              " time="0.003">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;Foo propText={
+  foo ? &lt;Trans&gt;foo&lt;/Trans&gt; : &lt;Trans&gt;bar&lt;/Trans&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/Foo&gt;
+              " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;Foo propText={
+  foo ? &lt;Trans&gt;foo&lt;/Trans&gt; : &lt;Trans&gt;bar&lt;/Trans&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/Foo&gt;
+              " time="0.004">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+function Stuff() {
+  return &lt;Text&gt;foo&lt;/Text&gt;
+}
+        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+function Stuff() {
+  return &lt;Text&gt;foo&lt;/Text&gt;
+}
+        " time="0.005">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+function Stuff({ foo }) {
+  return &lt;View&gt;{foo}&lt;/View&gt;
+}
+        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+function Stuff({ foo }) {
+  return &lt;View&gt;{foo}&lt;/View&gt;
+}
+        " time="0.004">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+function MyText() {
+  return &lt;Text&gt;foo&lt;/Text&gt;
+}
+        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+function MyText() {
+  return &lt;Text&gt;foo&lt;/Text&gt;
+}
+        " time="0.002">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+function MyText({ foo }) {
+  if (foo) {
+    return &lt;Text&gt;foo&lt;/Text&gt;
+  }
+  return &lt;Text&gt;foo&lt;/Text&gt;
+}
+        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+function MyText({ foo }) {
+  if (foo) {
+    return &lt;Text&gt;foo&lt;/Text&gt;
+  }
+  return &lt;Text&gt;foo&lt;/Text&gt;
+}
+        " time="0.004">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
 &lt;View&gt;
   &lt;Text&gt;{&apos;foo&apos;}&lt;/Text&gt;
 &lt;/View&gt;
@@ -399,7 +734,11 @@ function MyText({ foo }) {
 &lt;View&gt;
   &lt;Text&gt;{&apos;foo&apos;}&lt;/Text&gt;
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.006">
+=======
+       " time="0.003">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
@@ -409,7 +748,11 @@ function MyText({ foo }) {
 &lt;View&gt;
   &lt;Text&gt;{foo + &apos;foo&apos;}&lt;/Text&gt;
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.002">
+=======
+       " time="0.003">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
@@ -419,7 +762,11 @@ function MyText({ foo }) {
 &lt;View&gt;
   &lt;Text&gt;&lt;Trans&gt;{&apos;foo&apos;}&lt;/Trans&gt;&lt;/Text&gt;
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.002">
+=======
+       " time="0.003">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
@@ -429,7 +776,11 @@ function MyText({ foo }) {
 &lt;View&gt;
   {foo[&apos;bar&apos;] &amp;&amp; &lt;Bar /&gt;}
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.006">
+=======
+       " time="0.002">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
@@ -439,6 +790,7 @@ function MyText({ foo }) {
 &lt;View&gt;
   {(foo === &apos;bar&apos;) &amp;&amp; &lt;Bar /&gt;}
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.003">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
@@ -449,26 +801,46 @@ function MyText({ foo }) {
 &lt;View&gt;
   {(foo !== &apos;bar&apos;) &amp;&amp; &lt;Bar /&gt;}
 &lt;/View&gt;
+=======
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
        " time="0.002">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
-  &lt;Text&gt;{`foo`}&lt;/Text&gt;
+<<<<<<< HEAD
+=======
+  {(foo !== &apos;bar&apos;) &amp;&amp; &lt;Bar /&gt;}
 &lt;/View&gt;
        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
-  &lt;Text&gt;{`foo`}&lt;/Text&gt;
+  {(foo !== &apos;bar&apos;) &amp;&amp; &lt;Bar /&gt;}
 &lt;/View&gt;
        " time="0.003">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
+  &lt;Text&gt;{`foo`}&lt;/Text&gt;
+&lt;/View&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+  &lt;Text&gt;{`foo`}&lt;/Text&gt;
+&lt;/View&gt;
+<<<<<<< HEAD
+       " time="0.003">
+=======
+       " time="0.002">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
   &lt;Text&gt;&lt;Trans&gt;{`foo`}&lt;/Trans&gt;&lt;/Text&gt;
 &lt;/View&gt;
        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
   &lt;Text&gt;&lt;Trans&gt;{`foo`}&lt;/Trans&gt;&lt;/Text&gt;
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.003">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
@@ -517,16 +889,70 @@ function MyText({ foo }) {
     &lt;Bar /&gt;
   &lt;/View&gt;
 &lt;/Foo&gt;
+=======
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
        " time="0.005">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
+<<<<<<< HEAD
+=======
+  &lt;Text&gt;{_(msg`foo`)}&lt;/Text&gt;
+&lt;/View&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+  &lt;Text&gt;{_(msg`foo`)}&lt;/Text&gt;
+&lt;/View&gt;
+       " time="0.013">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+  &lt;Text&gt;&lt;Trans&gt;{_(msg`foo`)}&lt;/Trans&gt;&lt;/Text&gt;
+&lt;/View&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+  &lt;Text&gt;&lt;Trans&gt;{_(msg`foo`)}&lt;/Trans&gt;&lt;/Text&gt;
+&lt;/View&gt;
+       " time="0.009">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;Foo&gt;
+  &lt;View prop={stuff(&apos;foo&apos;)}&gt;
+    &lt;Bar /&gt;
+  &lt;/View&gt;
+&lt;/Foo&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;Foo&gt;
+  &lt;View prop={stuff(&apos;foo&apos;)}&gt;
+    &lt;Bar /&gt;
+  &lt;/View&gt;
+&lt;/Foo&gt;
+       " time="0.011">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;Foo&gt;
+  &lt;View onClick={() =&gt; stuff(&apos;foo&apos;)}&gt;
+    &lt;Bar /&gt;
+  &lt;/View&gt;
+&lt;/Foo&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;Foo&gt;
+  &lt;View onClick={() =&gt; stuff(&apos;foo&apos;)}&gt;
+    &lt;Bar /&gt;
+  &lt;/View&gt;
+&lt;/Foo&gt;
+       " time="0.01">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
   {renderItem(&apos;foo&apos;)}
 &lt;/View&gt;
        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
   {renderItem(&apos;foo&apos;)}
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.002">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
@@ -546,18 +972,47 @@ function MyText({ foo }) {
        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
   {foo[&apos;foo&apos;] &amp;&amp; &lt;Bar /&gt;}
+&lt;/View&gt;
+=======
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
+       " time="0.003">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+<<<<<<< HEAD
+=======
+  {foo === &apos;foo&apos; &amp;&amp; &lt;Bar /&gt;}
+&lt;/View&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+  {foo === &apos;foo&apos; &amp;&amp; &lt;Bar /&gt;}
 &lt;/View&gt;
        " time="0.003">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
+  {foo[&apos;foo&apos;] &amp;&amp; &lt;Bar /&gt;}
+&lt;/View&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+  {foo[&apos;foo&apos;] &amp;&amp; &lt;Bar /&gt;}
+&lt;/View&gt;
+       " time="0.004">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
+&lt;View&gt;
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
   {check(&apos;foo&apos;) &amp;&amp; &lt;Bar /&gt;}
 &lt;/View&gt;
        " name="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
   {check(&apos;foo&apos;) &amp;&amp; &lt;Bar /&gt;}
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.014">
+=======
+       " time="0.019">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
@@ -567,7 +1022,11 @@ function MyText({ foo }) {
 &lt;View&gt;
   {foo.bar &amp;&amp; &lt;Bar /&gt;}
 &lt;/View&gt;
+<<<<<<< HEAD
         " time="0.006">
+=======
+        " time="0.003">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;Text&gt;
@@ -577,7 +1036,11 @@ function MyText({ foo }) {
 &lt;Text&gt;
   &lt;Trans&gt;{renderItem(&apos;foo&apos;)}&lt;/Trans&gt;
 &lt;/Text&gt;
+<<<<<<< HEAD
        " time="0.007">
+=======
+       " time="0.008">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text valid 
 &lt;View&gt;
@@ -597,16 +1060,34 @@ function MyText({ foo }) {
 &lt;Text&gt;
   &lt;Trans&gt;{null}&lt;/Trans&gt;
 &lt;/Text&gt;
+<<<<<<< HEAD
        " time="0.006">
+=======
+       " time="0.014">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt; &lt;/View&gt;
         " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt; &lt;/View&gt;
+<<<<<<< HEAD
+=======
+        " time="0.015">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  foo
+&lt;/View&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  foo
+&lt;/View&gt;
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
         " time="0.004">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
+<<<<<<< HEAD
   foo
 &lt;/View&gt;
         " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
@@ -617,6 +1098,8 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
+=======
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
   &lt;&gt;
     foo
   &lt;/&gt;
@@ -627,7 +1110,11 @@ function MyText({ foo }) {
     foo
   &lt;/&gt;
 &lt;/View&gt;
+<<<<<<< HEAD
         " time="0.004">
+=======
+        " time="0.002">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
@@ -641,7 +1128,11 @@ function MyText({ foo }) {
     foo
   &lt;/Trans&gt;
 &lt;/View&gt;
+<<<<<<< HEAD
         " time="0.002">
+=======
+        " time="0.006">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
@@ -651,7 +1142,11 @@ function MyText({ foo }) {
 &lt;View&gt;
   {foo &amp;&amp; &lt;Trans&gt;foo&lt;/Trans&gt;}
 &lt;/View&gt;
+<<<<<<< HEAD
         " time="0.002">
+=======
+        " time="0.003">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
@@ -661,7 +1156,11 @@ function MyText({ foo }) {
 &lt;View&gt;
   {foo ? &lt;Trans&gt;foo&lt;/Trans&gt; : &lt;Trans&gt;bar&lt;/Trans&gt;}
 &lt;/View&gt;
+<<<<<<< HEAD
         " time="0.005">
+=======
+        " time="0.003">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;Trans&gt;
@@ -685,7 +1184,11 @@ function MyText({ foo }) {
 &lt;View&gt;
   foo {bar}
 &lt;/View&gt;
+<<<<<<< HEAD
         " time="0.001">
+=======
+        " time="0.003">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
@@ -699,7 +1202,11 @@ function MyText({ foo }) {
     foo
   &lt;/View&gt;
 &lt;/View&gt;
+<<<<<<< HEAD
         " time="0.001">
+=======
+        " time="0.006">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;Text&gt;
@@ -727,6 +1234,7 @@ function MyText({ foo }) {
 }&gt;
   &lt;Bar /&gt;
 &lt;/Text&gt;
+<<<<<<< HEAD
         " time="0.002">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
@@ -772,6 +1280,53 @@ function MyText({ foo }) {
         " time="0.008">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+=======
+        " time="0.008">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;Text prop={
+  foo &amp;&amp; &lt;View&gt;foo&lt;/View&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/Text&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;Text prop={
+  foo &amp;&amp; &lt;View&gt;foo&lt;/View&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/Text&gt;
+        " time="0.007">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;Text prop={
+  foo ? &lt;View&gt;foo&lt;/View&gt; : &lt;View&gt;bar&lt;/View&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/Text&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;Text prop={
+  foo ? &lt;View&gt;foo&lt;/View&gt; : &lt;View&gt;bar&lt;/View&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/Text&gt;
+        " time="0.009">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;Foo prop={
+  &lt;Trans&gt;foo&lt;/Trans&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/Foo&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;Foo prop={
+  &lt;Trans&gt;foo&lt;/Trans&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/Foo&gt;
+        " time="0.007">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
 function MyText() {
   return &lt;Foo /&gt;
 }
@@ -779,10 +1334,24 @@ function MyText() {
 function MyText() {
   return &lt;Foo /&gt;
 }
+<<<<<<< HEAD
+=======
+        " time="0.008">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+function MyText({ foo }) {
+  return &lt;Foo&gt;{foo}&lt;/Foo&gt;
+}
+        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+function MyText({ foo }) {
+  return &lt;Foo&gt;{foo}&lt;/Foo&gt;
+}
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
         " time="0.002">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 function MyText({ foo }) {
+<<<<<<< HEAD
   return &lt;Foo&gt;{foo}&lt;/Foo&gt;
 }
         " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
@@ -793,6 +1362,8 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 function MyText({ foo }) {
+=======
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
   if (foo) {
     return &lt;Foo&gt;{foo}&lt;/Foo&gt;
   }
@@ -805,7 +1376,11 @@ function MyText({ foo }) {
   }
   return &lt;Text&gt;foo&lt;/Text&gt;
 }
+<<<<<<< HEAD
         " time="0.003">
+=======
+        " time="0.006">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
@@ -815,7 +1390,11 @@ function MyText({ foo }) {
 &lt;View&gt;
   {&apos;foo&apos;}
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.002">
+=======
+       " time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
@@ -825,10 +1404,34 @@ function MyText({ foo }) {
 &lt;View&gt;
   {foo &amp;&amp; &apos;foo&apos;}
 &lt;/View&gt;
+<<<<<<< HEAD
+=======
+       " time="0.004">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  &lt;Trans&gt;{&apos;foo&apos;}&lt;/Trans&gt;
+&lt;/View&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  &lt;Trans&gt;{&apos;foo&apos;}&lt;/Trans&gt;
+&lt;/View&gt;
+       " time="0.009">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  {foo &amp;&amp; &lt;Trans&gt;{&apos;foo&apos;}&lt;/Trans&gt;}
+&lt;/View&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  {foo &amp;&amp; &lt;Trans&gt;{&apos;foo&apos;}&lt;/Trans&gt;}
+&lt;/View&gt;
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
        " time="0.003">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
+<<<<<<< HEAD
   &lt;Trans&gt;{&apos;foo&apos;}&lt;/Trans&gt;
 &lt;/View&gt;
        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
@@ -849,13 +1452,19 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
+=======
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
   {10}
 &lt;/View&gt;
        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
   {10}
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.002">
+=======
+       " time="0.003">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
@@ -865,7 +1474,11 @@ function MyText({ foo }) {
 &lt;View&gt;
   &lt;Trans&gt;{10}&lt;/Trans&gt;
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.002">
+=======
+       " time="0.005">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
@@ -875,7 +1488,11 @@ function MyText({ foo }) {
 &lt;View&gt;
   &lt;Trans&gt;{foo + 10}&lt;/Trans&gt;
 &lt;/View&gt;
+<<<<<<< HEAD
              " time="0.002">
+=======
+             " time="0.006">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
@@ -895,7 +1512,11 @@ function MyText({ foo }) {
 &lt;View&gt;
   &lt;Trans&gt;{`foo`}&lt;/Trans&gt;
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.002">
+=======
+       " time="0.005">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
@@ -905,17 +1526,25 @@ function MyText({ foo }) {
 &lt;View&gt;
   &lt;Trans&gt;{foo + `foo`}&lt;/Trans&gt;
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.002">
-    </testcase>
-    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
-&lt;View&gt;
-  {_(msg`foo`)}
-&lt;/View&gt;
-       " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
-&lt;View&gt;
-  {_(msg`foo`)}
-&lt;/View&gt;
+=======
        " time="0.003">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  {_(msg`foo`)}
+&lt;/View&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  {_(msg`foo`)}
+&lt;/View&gt;
+<<<<<<< HEAD
+       " time="0.003">
+=======
+       " time="0.002">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
@@ -925,6 +1554,7 @@ function MyText({ foo }) {
 &lt;View&gt;
   {foo + _(msg`foo`)}
 &lt;/View&gt;
+<<<<<<< HEAD
        " time="0.002">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
@@ -935,10 +1565,13 @@ function MyText({ foo }) {
 &lt;View&gt;
   &lt;Trans&gt;{_(msg`foo`)}&lt;/Trans&gt;
 &lt;/View&gt;
+=======
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
        " time="0.003">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
+<<<<<<< HEAD
   &lt;Trans&gt;{foo + _(msg`foo`)}&lt;/Trans&gt;
 &lt;/View&gt;
        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
@@ -984,10 +1617,18 @@ function MyText({ foo }) {
        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
 &lt;View&gt;
   &lt;Trans&gt;{&apos;foo&apos;}&lt;/Trans&gt;
+=======
+  &lt;Trans&gt;{_(msg`foo`)}&lt;/Trans&gt;
+&lt;/View&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  &lt;Trans&gt;{_(msg`foo`)}&lt;/Trans&gt;
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
 &lt;/View&gt;
        " time="0.002">
     </testcase>
     <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+<<<<<<< HEAD
 &lt;View prop={
   &lt;Trans&gt;&lt;Text&gt;foo&lt;/Text&gt;&lt;/Trans&gt;
 }&gt;
@@ -1080,6 +1721,76 @@ function MyText({ foo }) {
     <testcase classname="Language utils code conversions code2ToCode3 converts 2-letter to 3-letter code" name="Language utils code conversions code2ToCode3 converts 2-letter to 3-letter code" time="0.006">
     </testcase>
     <testcase classname="Language utils code conversions code3ToCode2 converts 3-letter to 2-letter code" name="Language utils code conversions code3ToCode2 converts 3-letter to 2-letter code" time="0.007">
+=======
+&lt;View&gt;
+  &lt;Trans&gt;{foo + _(msg`foo`)}&lt;/Trans&gt;
+&lt;/View&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  &lt;Trans&gt;{foo + _(msg`foo`)}&lt;/Trans&gt;
+&lt;/View&gt;
+       " time="0.018">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  &lt;Trans&gt;foo&lt;/Trans&gt;
+&lt;/View&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  &lt;Trans&gt;foo&lt;/Trans&gt;
+&lt;/View&gt;
+        " time="0.004">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  &lt;Trans&gt;&lt;Trans&gt;foo&lt;/Trans&gt;&lt;/Trans&gt;
+&lt;/View&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  &lt;Trans&gt;&lt;Trans&gt;foo&lt;/Trans&gt;&lt;/Trans&gt;
+&lt;/View&gt;
+        " time="0.006">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  &lt;Trans&gt;{foo}&lt;/Trans&gt;
+&lt;/View&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  &lt;Trans&gt;{foo}&lt;/Trans&gt;
+&lt;/View&gt;
+        " time="0.003">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  &lt;Trans&gt;{&apos;foo&apos;}&lt;/Trans&gt;
+&lt;/View&gt;
+       " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View&gt;
+  &lt;Trans&gt;{&apos;foo&apos;}&lt;/Trans&gt;
+&lt;/View&gt;
+       " time="0.002">
+    </testcase>
+    <testcase classname="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View prop={
+  &lt;Trans&gt;&lt;Text&gt;foo&lt;/Text&gt;&lt;/Trans&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/View&gt;
+        " name="avoid-unwrapped-text avoid-unwrapped-text invalid 
+&lt;View prop={
+  &lt;Trans&gt;&lt;Text&gt;foo&lt;/Text&gt;&lt;/Trans&gt;
+}&gt;
+  &lt;Bar /&gt;
+&lt;/View&gt;
+        " time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Language utils" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:07" time="0.298" tests="19">
+    <testcase classname="Language utils code conversions code2ToCode3 converts 2-letter to 3-letter code" name="Language utils code conversions code2ToCode3 converts 2-letter to 3-letter code" time="0.002">
+    </testcase>
+    <testcase classname="Language utils code conversions code3ToCode2 converts 3-letter to 2-letter code" name="Language utils code conversions code3ToCode2 converts 3-letter to 2-letter code" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="Language utils code conversions code3ToCode2Strict returns undefined for non-3 letter input" name="Language utils code conversions code3ToCode2Strict returns undefined for non-3 letter input" time="0.001">
     </testcase>
@@ -1089,6 +1800,7 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="Language utils languageName and codeToLanguageName codeToLanguageName converts code and returns language name" name="Language utils languageName and codeToLanguageName codeToLanguageName converts code and returns language name" time="0.001">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="Language utils getPostLanguage returns single declared language if only one" name="Language utils getPostLanguage returns single declared language if only one" time="0.372">
     </testcase>
     <testcase classname="Language utils getPostLanguage returns undefined for empty text" name="Language utils getPostLanguage returns undefined for empty text" time="0">
@@ -1098,6 +1810,15 @@ function MyText({ foo }) {
     <testcase classname="Language utils getPostLanguage getPostLanguage skips language extraction if post is not a valid record" name="Language utils getPostLanguage getPostLanguage skips language extraction if post is not a valid record" time="0.001">
     </testcase>
     <testcase classname="Language utils getPostLanguage candidates are filtered using code3ToCode2 if multiple langs returned by lande" name="Language utils getPostLanguage candidates are filtered using code3ToCode2 if multiple langs returned by lande" time="0.005">
+=======
+    <testcase classname="Language utils getPostLanguage returns single declared language if only one" name="Language utils getPostLanguage returns single declared language if only one" time="0.128">
+    </testcase>
+    <testcase classname="Language utils getPostLanguage returns undefined for empty text" name="Language utils getPostLanguage returns undefined for empty text" time="0.001">
+    </testcase>
+    <testcase classname="Language utils getPostLanguage uses lande for language detection when multiple langs" name="Language utils getPostLanguage uses lande for language detection when multiple langs" time="0">
+    </testcase>
+    <testcase classname="Language utils getPostLanguage returns undefined if no langs and no text" name="Language utils getPostLanguage returns undefined if no langs and no text" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="Language utils isPostInLanguage returns true if no language detected" name="Language utils isPostInLanguage returns true if no language detected" time="0.001">
     </testcase>
@@ -1105,14 +1826,18 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="Language utils getTranslatorLink returns correct Google Translate URL" name="Language utils getTranslatorLink returns correct Google Translate URL" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="Language utils getTranslatorLink getTranslatorLink encodes special characters" name="Language utils getTranslatorLink getTranslatorLink encodes special characters" time="0.001">
     </testcase>
+=======
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     <testcase classname="Language utils fixLegacyLanguageCode fixes known legacy codes" name="Language utils fixLegacyLanguageCode fixes known legacy codes" time="0">
     </testcase>
     <testcase classname="Language utils fixLegacyLanguageCode returns code if no fix needed" name="Language utils fixLegacyLanguageCode returns code if no fix needed" time="0.001">
     </testcase>
     <testcase classname="Language utils findSupportedAppLanguage returns first supported language" name="Language utils findSupportedAppLanguage returns first supported language" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="Language utils findSupportedAppLanguage returns default en if none supported" name="Language utils findSupportedAppLanguage returns default en if none supported" time="0">
     </testcase>
     <testcase classname="Language utils findSupportedAppLanguage returns default en if input empty or undefined" name="Language utils findSupportedAppLanguage returns default en if input empty or undefined" time="0.001">
@@ -1186,6 +1911,37 @@ function MyText({ foo }) {
     <testcase classname="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;&quot;, returns true" time="0.001">
     </testcase>
     <testcase classname="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;other.com&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;other.com&quot;, returns true" time="0">
+=======
+    <testcase classname="Language utils findSupportedAppLanguage returns default en if none supported" name="Language utils findSupportedAppLanguage returns default en if none supported" time="0.001">
+    </testcase>
+    <testcase classname="Language utils findSupportedAppLanguage returns default en if input empty or undefined" name="Language utils findSupportedAppLanguage returns default en if input empty or undefined" time="0">
+    </testcase>
+    <testcase classname=" sanitizeAppLanguageSetting" name=" sanitizeAppLanguageSetting" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="downloadAndResize" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:07" time="0.223" tests="5">
+    <testcase classname="downloadAndResize should return resized image for valid URI and options" name="downloadAndResize should return resized image for valid URI and options" time="0.009">
+    </testcase>
+    <testcase classname="downloadAndResize should return undefined for invalid URI" name="downloadAndResize should return undefined for invalid URI" time="0.098">
+    </testcase>
+    <testcase classname="downloadAndResize should return undefined for non-200 response" name="downloadAndResize should return undefined for non-200 response" time="0.001">
+    </testcase>
+    <testcase classname="downloadAndResize should not downsize whenever dimensions are below the max dimensions" name="downloadAndResize should not downsize whenever dimensions are below the max dimensions" time="0.001">
+    </testcase>
+    <testcase classname="downloadAndResize should resize dimensions and maintain aspect ratio if they are above the max dimensons" name="downloadAndResize should resize dimensions and maintain aspect ratio if they are above the max dimensons" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="linkRequiresWarning" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:07" time="0.427" tests="104">
+    <testcase classname="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;http://example.com&quot;, returns false" name="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;http://example.com&quot;, returns false" time="0.006">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;example.com&quot;, returns false" name="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;example.com&quot;, returns false" time="0.002">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;example.com/page&quot;, returns false" name="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;example.com/page&quot;, returns false" time="0">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;&quot;, returns true" time="0.001">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;other.com&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;other.com&quot;, returns true" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;http://other.com&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;http://other.com&quot;, returns true" time="0.001">
     </testcase>
@@ -1193,6 +1949,7 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;example.com more&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;example.com more&quot;, returns true" time="0.001">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;http://example.co&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;http://example.co&quot;, returns true" time="0">
     </testcase>
     <testcase classname="linkRequiresWarning given input uri &quot;http://example.co&quot; and text &quot;http://example.com&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://example.co&quot; and text &quot;http://example.com&quot;, returns true" time="0.001">
@@ -1204,6 +1961,19 @@ function MyText({ foo }) {
     <testcase classname="linkRequiresWarning given input uri &quot;http://site.pages.dev&quot; and text &quot;http://site.page&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://site.pages.dev&quot; and text &quot;http://site.page&quot;, returns true" time="0.001">
     </testcase>
     <testcase classname="linkRequiresWarning given input uri &quot;http://site.page&quot; and text &quot;http://site.pages.dev&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://site.page&quot; and text &quot;http://site.pages.dev&quot;, returns true" time="0">
+=======
+    <testcase classname="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;http://example.co&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;http://example.co&quot;, returns true" time="0.001">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://example.co&quot; and text &quot;http://example.com&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://example.co&quot; and text &quot;http://example.com&quot;, returns true" time="0">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;example.co&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://example.com&quot; and text &quot;example.co&quot;, returns true" time="0.001">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://example.co&quot; and text &quot;example.com&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://example.co&quot; and text &quot;example.com&quot;, returns true" time="0.001">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://site.pages.dev&quot; and text &quot;http://site.page&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://site.pages.dev&quot; and text &quot;http://site.page&quot;, returns true" time="0">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://site.page&quot; and text &quot;http://site.pages.dev&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://site.page&quot; and text &quot;http://site.pages.dev&quot;, returns true" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="linkRequiresWarning given input uri &quot;http://site.pages.dev&quot; and text &quot;site.page&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://site.pages.dev&quot; and text &quot;site.page&quot;, returns true" time="0.001">
     </testcase>
@@ -1211,6 +1981,7 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="linkRequiresWarning given input uri &quot;http://site.pages.dev&quot; and text &quot;http://site.pages&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://site.pages.dev&quot; and text &quot;http://site.pages&quot;, returns true" time="0.001">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="linkRequiresWarning given input uri &quot;http://site.pages&quot; and text &quot;http://site.pages.dev&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://site.pages&quot; and text &quot;http://site.pages.dev&quot;, returns true" time="0.004">
     </testcase>
     <testcase classname="linkRequiresWarning given input uri &quot;http://site.pages.dev&quot; and text &quot;site.pages&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://site.pages.dev&quot; and text &quot;site.pages&quot;, returns true" time="0">
@@ -1250,25 +2021,78 @@ function MyText({ foo }) {
     <testcase classname="linkRequiresWarning given input uri &quot;example.com&quot; and text &quot;example.com&quot;, returns true" name="linkRequiresWarning given input uri &quot;example.com&quot; and text &quot;example.com&quot;, returns true" time="0">
     </testcase>
     <testcase classname="linkRequiresWarning given input uri &quot;/profile&quot; and text &quot;Username&quot;, returns false" name="linkRequiresWarning given input uri &quot;/profile&quot; and text &quot;Username&quot;, returns false" time="0.001">
+=======
+    <testcase classname="linkRequiresWarning given input uri &quot;http://site.pages&quot; and text &quot;http://site.pages.dev&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://site.pages&quot; and text &quot;http://site.pages.dev&quot;, returns true" time="0.006">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://site.pages.dev&quot; and text &quot;site.pages&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://site.pages.dev&quot; and text &quot;site.pages&quot;, returns true" time="0.001">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://site.pages&quot; and text &quot;site.pages.dev&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://site.pages&quot; and text &quot;site.pages.dev&quot;, returns true" time="0.001">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot; and text &quot;my post&quot;, returns false" name="linkRequiresWarning given input uri &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot; and text &quot;my post&quot;, returns false" time="0.001">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;https://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot; and text &quot;my post&quot;, returns false" name="linkRequiresWarning given input uri &quot;https://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot; and text &quot;my post&quot;, returns false" time="0.001">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://bsky.app/&quot; and text &quot;bluesky&quot;, returns false" name="linkRequiresWarning given input uri &quot;http://bsky.app/&quot; and text &quot;bluesky&quot;, returns false" time="0.006">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;https://bsky.app/&quot; and text &quot;bluesky&quot;, returns false" name="linkRequiresWarning given input uri &quot;https://bsky.app/&quot; and text &quot;bluesky&quot;, returns false" time="0.004">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot; and text &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot;, returns false" name="linkRequiresWarning given input uri &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot; and text &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot;, returns false" time="0.002">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;https://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot; and text &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot;, returns false" name="linkRequiresWarning given input uri &quot;https://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot; and text &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot;, returns false" time="0.001">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://bsky.app/&quot; and text &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot;, returns false" name="linkRequiresWarning given input uri &quot;http://bsky.app/&quot; and text &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot;, returns false" time="0.003">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;https://bsky.app/&quot; and text &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot;, returns false" name="linkRequiresWarning given input uri &quot;https://bsky.app/&quot; and text &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot;, returns false" time="0">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot; and text &quot;https://google.com&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot; and text &quot;https://google.com&quot;, returns true" time="0.001">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;https://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot; and text &quot;https://google.com&quot;, returns true" name="linkRequiresWarning given input uri &quot;https://bsky.app/profile/bob.test/post/3kbeuduu7m22v&quot; and text &quot;https://google.com&quot;, returns true" time="0.003">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;http://bsky.app/&quot; and text &quot;https://google.com&quot;, returns true" name="linkRequiresWarning given input uri &quot;http://bsky.app/&quot; and text &quot;https://google.com&quot;, returns true" time="0.001">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;https://bsky.app/&quot; and text &quot;https://google.com&quot;, returns true" name="linkRequiresWarning given input uri &quot;https://bsky.app/&quot; and text &quot;https://google.com&quot;, returns true" time="0">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;https://Example.com&quot; and text &quot;example.com&quot;, returns false" name="linkRequiresWarning given input uri &quot;https://Example.com&quot; and text &quot;example.com&quot;, returns false" time="0.002">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;https://example.com&quot; and text &quot;Example.com&quot;, returns false" name="linkRequiresWarning given input uri &quot;https://example.com&quot; and text &quot;Example.com&quot;, returns false" time="0.011">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;&quot; and text &quot;&quot;, returns true" name="linkRequiresWarning given input uri &quot;&quot; and text &quot;&quot;, returns true" time="0.001">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;example.com&quot; and text &quot;example.com&quot;, returns true" name="linkRequiresWarning given input uri &quot;example.com&quot; and text &quot;example.com&quot;, returns true" time="0">
+    </testcase>
+    <testcase classname="linkRequiresWarning given input uri &quot;/profile&quot; and text &quot;Username&quot;, returns false" name="linkRequiresWarning given input uri &quot;/profile&quot; and text &quot;Username&quot;, returns false" time="0">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="linkRequiresWarning given input uri &quot;#&quot; and text &quot;Show More&quot;, returns false" name="linkRequiresWarning given input uri &quot;#&quot; and text &quot;Show More&quot;, returns false" time="0">
     </testcase>
     <testcase classname="linkRequiresWarning given input uri &quot;https://docs.bsky.app&quot; and text &quot;https://docs.bsky.app&quot;, returns false" name="linkRequiresWarning given input uri &quot;https://docs.bsky.app&quot; and text &quot;https://docs.bsky.app&quot;, returns false" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="linkRequiresWarning given input uri &quot;https://bsky.app/compose/intent?text=test&quot; and text &quot;Compose a post&quot;, returns false" name="linkRequiresWarning given input uri &quot;https://bsky.app/compose/intent?text=test&quot; and text &quot;Compose a post&quot;, returns false" time="0.001">
+=======
+    <testcase classname="linkRequiresWarning given input uri &quot;https://bsky.app/compose/intent?text=test&quot; and text &quot;Compose a post&quot;, returns false" name="linkRequiresWarning given input uri &quot;https://bsky.app/compose/intent?text=test&quot; and text &quot;Compose a post&quot;, returns false" time="0.003">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="isPossiblyAUrl given input uri &quot;&quot;, returns false" name="isPossiblyAUrl given input uri &quot;&quot;, returns false" time="0.001">
     </testcase>
     <testcase classname="isPossiblyAUrl given input uri &quot;text&quot;, returns false" name="isPossiblyAUrl given input uri &quot;text&quot;, returns false" time="0.001">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="isPossiblyAUrl given input uri &quot;some text&quot;, returns false" name="isPossiblyAUrl given input uri &quot;some text&quot;, returns false" time="0.001">
     </testcase>
     <testcase classname="isPossiblyAUrl given input uri &quot;some text&quot;, returns false" name="isPossiblyAUrl given input uri &quot;some text&quot;, returns false" time="0">
     </testcase>
+=======
+    <testcase classname="isPossiblyAUrl given input uri &quot;some text&quot;, returns false" name="isPossiblyAUrl given input uri &quot;some text&quot;, returns false" time="0">
+    </testcase>
+    <testcase classname="isPossiblyAUrl given input uri &quot;some text&quot;, returns false" name="isPossiblyAUrl given input uri &quot;some text&quot;, returns false" time="0.001">
+    </testcase>
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     <testcase classname="isPossiblyAUrl given input uri &quot;some domain.com&quot;, returns false" name="isPossiblyAUrl given input uri &quot;some domain.com&quot;, returns false" time="0.001">
     </testcase>
     <testcase classname="isPossiblyAUrl given input uri &quot;domain.com&quot;, returns true" name="isPossiblyAUrl given input uri &quot;domain.com&quot;, returns true" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="isPossiblyAUrl given input uri &quot; domain.com&quot;, returns true" name="isPossiblyAUrl given input uri &quot; domain.com&quot;, returns true" time="0.001">
     </testcase>
     <testcase classname="isPossiblyAUrl given input uri &quot;domain.com &quot;, returns true" name="isPossiblyAUrl given input uri &quot;domain.com &quot;, returns true" time="0">
@@ -1276,6 +2100,15 @@ function MyText({ foo }) {
     <testcase classname="isPossiblyAUrl given input uri &quot; domain.com &quot;, returns true" name="isPossiblyAUrl given input uri &quot; domain.com &quot;, returns true" time="0">
     </testcase>
     <testcase classname="isPossiblyAUrl given input uri &quot;http://domain.com&quot;, returns true" name="isPossiblyAUrl given input uri &quot;http://domain.com&quot;, returns true" time="0.001">
+=======
+    <testcase classname="isPossiblyAUrl given input uri &quot; domain.com&quot;, returns true" name="isPossiblyAUrl given input uri &quot; domain.com&quot;, returns true" time="0">
+    </testcase>
+    <testcase classname="isPossiblyAUrl given input uri &quot;domain.com &quot;, returns true" name="isPossiblyAUrl given input uri &quot;domain.com &quot;, returns true" time="0.004">
+    </testcase>
+    <testcase classname="isPossiblyAUrl given input uri &quot; domain.com &quot;, returns true" name="isPossiblyAUrl given input uri &quot; domain.com &quot;, returns true" time="0">
+    </testcase>
+    <testcase classname="isPossiblyAUrl given input uri &quot;http://domain.com&quot;, returns true" name="isPossiblyAUrl given input uri &quot;http://domain.com&quot;, returns true" time="0">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="isPossiblyAUrl given input uri &quot; http://domain.com&quot;, returns true" name="isPossiblyAUrl given input uri &quot; http://domain.com&quot;, returns true" time="0">
     </testcase>
@@ -1283,16 +2116,25 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="isPossiblyAUrl given input uri &quot; http://domain.com &quot;, returns true" name="isPossiblyAUrl given input uri &quot; http://domain.com &quot;, returns true" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="isPossiblyAUrl given input uri &quot;https://domain.com&quot;, returns true" name="isPossiblyAUrl given input uri &quot;https://domain.com&quot;, returns true" time="0.001">
     </testcase>
     <testcase classname="isPossiblyAUrl given input uri &quot; https://domain.com&quot;, returns true" name="isPossiblyAUrl given input uri &quot; https://domain.com&quot;, returns true" time="0">
     </testcase>
     <testcase classname="isPossiblyAUrl given input uri &quot;https://domain.com &quot;, returns true" name="isPossiblyAUrl given input uri &quot;https://domain.com &quot;, returns true" time="0.005">
+=======
+    <testcase classname="isPossiblyAUrl given input uri &quot;https://domain.com&quot;, returns true" name="isPossiblyAUrl given input uri &quot;https://domain.com&quot;, returns true" time="0">
+    </testcase>
+    <testcase classname="isPossiblyAUrl given input uri &quot; https://domain.com&quot;, returns true" name="isPossiblyAUrl given input uri &quot; https://domain.com&quot;, returns true" time="0">
+    </testcase>
+    <testcase classname="isPossiblyAUrl given input uri &quot;https://domain.com &quot;, returns true" name="isPossiblyAUrl given input uri &quot;https://domain.com &quot;, returns true" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="isPossiblyAUrl given input uri &quot; https://domain.com &quot;, returns true" name="isPossiblyAUrl given input uri &quot; https://domain.com &quot;, returns true" time="0">
     </testcase>
     <testcase classname="isPossiblyAUrl given input uri &quot;http://domain.com/foo&quot;, returns true" name="isPossiblyAUrl given input uri &quot;http://domain.com/foo&quot;, returns true" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="isPossiblyAUrl given input uri &quot;http://domain.com stuff&quot;, returns true" name="isPossiblyAUrl given input uri &quot;http://domain.com stuff&quot;, returns true" time="0.001">
     </testcase>
     <testcase classname="splitApexDomain given input uri &quot;&quot;, returns &quot;&quot;,&quot;&quot;" name="splitApexDomain given input uri &quot;&quot;, returns &quot;&quot;,&quot;&quot;" time="0.014">
@@ -1310,6 +2152,25 @@ function MyText({ foo }) {
     <testcase classname="splitApexDomain given input uri &quot;example.nonsense&quot;, returns &quot;&quot;,&quot;example.nonsense&quot;" name="splitApexDomain given input uri &quot;example.nonsense&quot;, returns &quot;&quot;,&quot;example.nonsense&quot;" time="0.002">
     </testcase>
     <testcase classname="splitApexDomain given input uri &quot;foo.example.nonsense&quot;, returns &quot;&quot;,&quot;foo.example.nonsense&quot;" name="splitApexDomain given input uri &quot;foo.example.nonsense&quot;, returns &quot;&quot;,&quot;foo.example.nonsense&quot;" time="0.002">
+=======
+    <testcase classname="isPossiblyAUrl given input uri &quot;http://domain.com stuff&quot;, returns true" name="isPossiblyAUrl given input uri &quot;http://domain.com stuff&quot;, returns true" time="0">
+    </testcase>
+    <testcase classname="splitApexDomain given input uri &quot;&quot;, returns &quot;&quot;,&quot;&quot;" name="splitApexDomain given input uri &quot;&quot;, returns &quot;&quot;,&quot;&quot;" time="0.01">
+    </testcase>
+    <testcase classname="splitApexDomain given input uri &quot;example.com&quot;, returns &quot;&quot;,&quot;example.com&quot;" name="splitApexDomain given input uri &quot;example.com&quot;, returns &quot;&quot;,&quot;example.com&quot;" time="0.035">
+    </testcase>
+    <testcase classname="splitApexDomain given input uri &quot;foo.example.com&quot;, returns &quot;foo.&quot;,&quot;example.com&quot;" name="splitApexDomain given input uri &quot;foo.example.com&quot;, returns &quot;foo.&quot;,&quot;example.com&quot;" time="0.004">
+    </testcase>
+    <testcase classname="splitApexDomain given input uri &quot;foo.bar.example.com&quot;, returns &quot;foo.bar.&quot;,&quot;example.com&quot;" name="splitApexDomain given input uri &quot;foo.bar.example.com&quot;, returns &quot;foo.bar.&quot;,&quot;example.com&quot;" time="0.01">
+    </testcase>
+    <testcase classname="splitApexDomain given input uri &quot;example.co.uk&quot;, returns &quot;&quot;,&quot;example.co.uk&quot;" name="splitApexDomain given input uri &quot;example.co.uk&quot;, returns &quot;&quot;,&quot;example.co.uk&quot;" time="0.001">
+    </testcase>
+    <testcase classname="splitApexDomain given input uri &quot;foo.example.co.uk&quot;, returns &quot;foo.&quot;,&quot;example.co.uk&quot;" name="splitApexDomain given input uri &quot;foo.example.co.uk&quot;, returns &quot;foo.&quot;,&quot;example.co.uk&quot;" time="0.001">
+    </testcase>
+    <testcase classname="splitApexDomain given input uri &quot;example.nonsense&quot;, returns &quot;&quot;,&quot;example.nonsense&quot;" name="splitApexDomain given input uri &quot;example.nonsense&quot;, returns &quot;&quot;,&quot;example.nonsense&quot;" time="0.001">
+    </testcase>
+    <testcase classname="splitApexDomain given input uri &quot;foo.example.nonsense&quot;, returns &quot;&quot;,&quot;foo.example.nonsense&quot;" name="splitApexDomain given input uri &quot;foo.example.nonsense&quot;, returns &quot;&quot;,&quot;foo.example.nonsense&quot;" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="splitApexDomain given input uri &quot;foo.bar.example.nonsense&quot;, returns &quot;&quot;,&quot;foo.bar.example.nonsense&quot;" name="splitApexDomain given input uri &quot;foo.bar.example.nonsense&quot;, returns &quot;&quot;,&quot;foo.bar.example.nonsense&quot;" time="0.005">
     </testcase>
@@ -1317,6 +2178,7 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;#&quot;, returns true" name="isTrustedUrl given input uri &quot;#&quot;, returns true" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="isTrustedUrl given input uri &quot;#profile&quot;, returns true" name="isTrustedUrl given input uri &quot;#profile&quot;, returns true" time="0.001">
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;/&quot;, returns true" name="isTrustedUrl given input uri &quot;/&quot;, returns true" time="0">
@@ -1324,16 +2186,33 @@ function MyText({ foo }) {
     <testcase classname="isTrustedUrl given input uri &quot;/profile&quot;, returns true" name="isTrustedUrl given input uri &quot;/profile&quot;, returns true" time="0.001">
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;/profile/&quot;, returns true" name="isTrustedUrl given input uri &quot;/profile/&quot;, returns true" time="0">
+=======
+    <testcase classname="isTrustedUrl given input uri &quot;#profile&quot;, returns true" name="isTrustedUrl given input uri &quot;#profile&quot;, returns true" time="0">
+    </testcase>
+    <testcase classname="isTrustedUrl given input uri &quot;/&quot;, returns true" name="isTrustedUrl given input uri &quot;/&quot;, returns true" time="0.001">
+    </testcase>
+    <testcase classname="isTrustedUrl given input uri &quot;/profile&quot;, returns true" name="isTrustedUrl given input uri &quot;/profile&quot;, returns true" time="0">
+    </testcase>
+    <testcase classname="isTrustedUrl given input uri &quot;/profile/&quot;, returns true" name="isTrustedUrl given input uri &quot;/profile/&quot;, returns true" time="0.003">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;/profile/bob.test&quot;, returns true" name="isTrustedUrl given input uri &quot;/profile/bob.test&quot;, returns true" time="0">
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;https://bsky.app&quot;, returns true" name="isTrustedUrl given input uri &quot;https://bsky.app&quot;, returns true" time="0.001">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="isTrustedUrl given input uri &quot;https://bsky.app/&quot;, returns true" name="isTrustedUrl given input uri &quot;https://bsky.app/&quot;, returns true" time="0">
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;https://bsky.app/profile/bob.test&quot;, returns true" name="isTrustedUrl given input uri &quot;https://bsky.app/profile/bob.test&quot;, returns true" time="0">
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;https://www.bsky.app&quot;, returns true" name="isTrustedUrl given input uri &quot;https://www.bsky.app&quot;, returns true" time="0.001">
+=======
+    <testcase classname="isTrustedUrl given input uri &quot;https://bsky.app/&quot;, returns true" name="isTrustedUrl given input uri &quot;https://bsky.app/&quot;, returns true" time="0.001">
+    </testcase>
+    <testcase classname="isTrustedUrl given input uri &quot;https://bsky.app/profile/bob.test&quot;, returns true" name="isTrustedUrl given input uri &quot;https://bsky.app/profile/bob.test&quot;, returns true" time="0">
+    </testcase>
+    <testcase classname="isTrustedUrl given input uri &quot;https://www.bsky.app&quot;, returns true" name="isTrustedUrl given input uri &quot;https://www.bsky.app&quot;, returns true" time="0">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;https://www.bsky.app/&quot;, returns true" name="isTrustedUrl given input uri &quot;https://www.bsky.app/&quot;, returns true" time="0">
     </testcase>
@@ -1341,7 +2220,11 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;https://bsky.social&quot;, returns true" name="isTrustedUrl given input uri &quot;https://bsky.social&quot;, returns true" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="isTrustedUrl given input uri &quot;https://bsky.social/blog&quot;, returns true" name="isTrustedUrl given input uri &quot;https://bsky.social/blog&quot;, returns true" time="0">
+=======
+    <testcase classname="isTrustedUrl given input uri &quot;https://bsky.social/blog&quot;, returns true" name="isTrustedUrl given input uri &quot;https://bsky.social/blog&quot;, returns true" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;https://blueskyweb.xyz&quot;, returns true" name="isTrustedUrl given input uri &quot;https://blueskyweb.xyz&quot;, returns true" time="0">
     </testcase>
@@ -1349,7 +2232,11 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;http://bsky.app&quot;, returns true" name="isTrustedUrl given input uri &quot;http://bsky.app&quot;, returns true" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="isTrustedUrl given input uri &quot;http://bsky.social&quot;, returns true" name="isTrustedUrl given input uri &quot;http://bsky.social&quot;, returns true" time="0">
+=======
+    <testcase classname="isTrustedUrl given input uri &quot;http://bsky.social&quot;, returns true" name="isTrustedUrl given input uri &quot;http://bsky.social&quot;, returns true" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;http://blueskyweb.xyz&quot;, returns true" name="isTrustedUrl given input uri &quot;http://blueskyweb.xyz&quot;, returns true" time="0">
     </testcase>
@@ -1363,6 +2250,7 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="isTrustedUrl given input uri &quot;https://blueskywebxzendesk.com&quot;, returns false" name="isTrustedUrl given input uri &quot;https://blueskywebxzendesk.com&quot;, returns false" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="bskyUtils isValidDomain returns true for known valid domains" name="bskyUtils isValidDomain returns true for known valid domains" time="0.004">
     </testcase>
     <testcase classname="bskyUtils isBskyAppUrl correctly identifies bsky.app URLs" name="bskyUtils isBskyAppUrl correctly identifies bsky.app URLs" time="0">
@@ -1490,11 +2378,39 @@ function MyText({ foo }) {
   </testsuite>
   <testsuite name="emailTypoChecker" errors="0" failures="0" skipped="0" timestamp="2025-05-26T09:38:39" time="0.255" tests="59">
     <testcase classname="emailTypoChecker should be invalid: abcde@gnail.com" name="emailTypoChecker should be invalid: abcde@gnail.com" time="0.028">
+=======
+    <testcase classname="bskyUtils isValidDomain returns true for known valid domains" name="bskyUtils isValidDomain returns true for known valid domains" time="0.003">
+    </testcase>
+    <testcase classname="bskyUtils isBskyAppUrl correctly identifies bsky.app URLs" name="bskyUtils isBskyAppUrl correctly identifies bsky.app URLs" time="0.001">
+    </testcase>
+    <testcase classname="bskyUtils toShortUrl truncates long URLs correctly" name="bskyUtils toShortUrl truncates long URLs correctly" time="0.002">
+    </testcase>
+    <testcase classname="bskyUtils isExternalUrl detects external URLs properly" name="bskyUtils isExternalUrl detects external URLs properly" time="0.002">
+    </testcase>
+    <testcase classname="bskyUtils createProxiedUrl builds a valid proxied URL" name="bskyUtils createProxiedUrl builds a valid proxied URL" time="0.003">
+    </testcase>
+    <testcase classname="bskyUtils isShortLink recognizes short bsky links" name="bskyUtils isShortLink recognizes short bsky links" time="0">
+    </testcase>
+    <testcase classname="bskyUtils shortLinkToHref transforms short links to expected paths" name="bskyUtils shortLinkToHref transforms short links to expected paths" time="0.001">
+    </testcase>
+    <testcase classname="bskyUtils isBskyStarterPackUrl detects starter-pack links" name="bskyUtils isBskyStarterPackUrl detects starter-pack links" time="0.006">
+    </testcase>
+    <testcase classname="bskyUtils labelToDomain extracts domains from labels" name="bskyUtils labelToDomain extracts domains from labels" time="0.001">
+    </testcase>
+    <testcase classname="bskyUtils isPossiblyAUrl detects URL-like strings" name="bskyUtils isPossiblyAUrl detects URL-like strings" time="0.001">
+    </testcase>
+    <testcase classname="bskyUtils definitelyUrl validates and formats URLs correctly" name="bskyUtils definitelyUrl validates and formats URLs correctly" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="emailTypoChecker" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:07" time="0.187" tests="59">
+    <testcase classname="emailTypoChecker should be invalid: abcde@gnail.com" name="emailTypoChecker should be invalid: abcde@gnail.com" time="0.036">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@gnail.co" name="emailTypoChecker should be invalid: abcde@gnail.co" time="0.001">
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@gmaill.com" name="emailTypoChecker should be invalid: abcde@gmaill.com" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="emailTypoChecker should be invalid: abcde@gmaill.co" name="emailTypoChecker should be invalid: abcde@gmaill.co" time="0">
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@gmai.com" name="emailTypoChecker should be invalid: abcde@gmai.com" time="0.001">
@@ -1508,22 +2424,49 @@ function MyText({ foo }) {
     <testcase classname="emailTypoChecker should be invalid: abcde@gmail.co" name="emailTypoChecker should be invalid: abcde@gmail.co" time="0.001">
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@iclod.com" name="emailTypoChecker should be invalid: abcde@iclod.com" time="0.002">
+=======
+    <testcase classname="emailTypoChecker should be invalid: abcde@gmaill.co" name="emailTypoChecker should be invalid: abcde@gmaill.co" time="0.001">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@gmai.com" name="emailTypoChecker should be invalid: abcde@gmai.com" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@gmai.co" name="emailTypoChecker should be invalid: abcde@gmai.co" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@gmal.com" name="emailTypoChecker should be invalid: abcde@gmal.com" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@gmal.co" name="emailTypoChecker should be invalid: abcde@gmal.co" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@gmail.co" name="emailTypoChecker should be invalid: abcde@gmail.co" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@iclod.com" name="emailTypoChecker should be invalid: abcde@iclod.com" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@iclod.co" name="emailTypoChecker should be invalid: abcde@iclod.co" time="0">
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@outllok.com" name="emailTypoChecker should be invalid: abcde@outllok.com" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="emailTypoChecker should be invalid: abcde@outllok.co" name="emailTypoChecker should be invalid: abcde@outllok.co" time="0.001">
+=======
+    <testcase classname="emailTypoChecker should be invalid: abcde@outllok.co" name="emailTypoChecker should be invalid: abcde@outllok.co" time="0">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@outlook.co" name="emailTypoChecker should be invalid: abcde@outlook.co" time="0">
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@yaoo.com" name="emailTypoChecker should be invalid: abcde@yaoo.com" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="emailTypoChecker should be invalid: abcde@yaoo.co" name="emailTypoChecker should be invalid: abcde@yaoo.co" time="0.013">
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@yaho.com" name="emailTypoChecker should be invalid: abcde@yaho.com" time="0">
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@yaho.co" name="emailTypoChecker should be invalid: abcde@yaho.co" time="0.004">
+=======
+    <testcase classname="emailTypoChecker should be invalid: abcde@yaoo.co" name="emailTypoChecker should be invalid: abcde@yaoo.co" time="0.001">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@yaho.com" name="emailTypoChecker should be invalid: abcde@yaho.com" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@yaho.co" name="emailTypoChecker should be invalid: abcde@yaho.co" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@yahooo.com" name="emailTypoChecker should be invalid: abcde@yahooo.com" time="0.001">
     </testcase>
@@ -1531,6 +2474,7 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@yahoo.co" name="emailTypoChecker should be invalid: abcde@yahoo.co" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="emailTypoChecker should be invalid: abcde@hithere.jul" name="emailTypoChecker should be invalid: abcde@hithere.jul" time="0">
     </testcase>
     <testcase classname="emailTypoChecker should be invalid: abcde@agpowj.notshop" name="emailTypoChecker should be invalid: abcde@agpowj.notshop" time="0">
@@ -1566,6 +2510,43 @@ function MyText({ foo }) {
     <testcase classname="emailTypoChecker should be valid: abcde@aland.ax" name="emailTypoChecker should be valid: abcde@aland.ax" time="0">
     </testcase>
     <testcase classname="emailTypoChecker should be valid: abcde@bouvet.bv" name="emailTypoChecker should be valid: abcde@bouvet.bv" time="0">
+=======
+    <testcase classname="emailTypoChecker should be invalid: abcde@hithere.jul" name="emailTypoChecker should be invalid: abcde@hithere.jul" time="0.001">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@agpowj.notshop" name="emailTypoChecker should be invalid: abcde@agpowj.notshop" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@thisisnot.avalid.tld.nope" name="emailTypoChecker should be invalid: abcde@thisisnot.avalid.tld.nope" time="0.012">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@czechoslovakia.cs" name="emailTypoChecker should be invalid: abcde@czechoslovakia.cs" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@liveon.cbs" name="emailTypoChecker should be invalid: abcde@liveon.cbs" time="0.001">
+    </testcase>
+    <testcase classname="emailTypoChecker should be invalid: abcde@its.showtime" name="emailTypoChecker should be invalid: abcde@its.showtime" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@gmail.com" name="emailTypoChecker should be valid: abcde@gmail.com" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@gnail.com.test.com" name="emailTypoChecker should be valid: abcde@gnail.com.test.com" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@outlook.com" name="emailTypoChecker should be valid: abcde@outlook.com" time="0.001">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@yahoo.com" name="emailTypoChecker should be valid: abcde@yahoo.com" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@icloud.com" name="emailTypoChecker should be valid: abcde@icloud.com" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@firefox.com" name="emailTypoChecker should be valid: abcde@firefox.com" time="0.001">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@firefox.co" name="emailTypoChecker should be valid: abcde@firefox.co" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@hello.world.com" name="emailTypoChecker should be valid: abcde@hello.world.com" time="0.001">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@buy.me.a.coffee.shop" name="emailTypoChecker should be valid: abcde@buy.me.a.coffee.shop" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@mayotte.yt" name="emailTypoChecker should be valid: abcde@mayotte.yt" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@aland.ax" name="emailTypoChecker should be valid: abcde@aland.ax" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@bouvet.bv" name="emailTypoChecker should be valid: abcde@bouvet.bv" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="emailTypoChecker should be valid: abcde@uk.gb" name="emailTypoChecker should be valid: abcde@uk.gb" time="0">
     </testcase>
@@ -1575,7 +2556,11 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="emailTypoChecker should be valid: abcde@plane.aero" name="emailTypoChecker should be valid: abcde@plane.aero" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="emailTypoChecker should be valid: abcde@cute.cat" name="emailTypoChecker should be valid: abcde@cute.cat" time="0">
+=======
+    <testcase classname="emailTypoChecker should be valid: abcde@cute.cat" name="emailTypoChecker should be valid: abcde@cute.cat" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="emailTypoChecker should be valid: abcde@together.coop" name="emailTypoChecker should be valid: abcde@together.coop" time="0">
     </testcase>
@@ -1591,6 +2576,7 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="emailTypoChecker should be valid: abcde@whatsinyour.locker" name="emailTypoChecker should be valid: abcde@whatsinyour.locker" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="emailTypoChecker should be valid: abcde@letsmakea.deal" name="emailTypoChecker should be valid: abcde@letsmakea.deal" time="0">
     </testcase>
     <testcase classname="emailTypoChecker should be valid: abcde@skeet.now" name="emailTypoChecker should be valid: abcde@skeet.now" time="0.001">
@@ -1602,12 +2588,26 @@ function MyText({ foo }) {
     <testcase classname="emailTypoChecker should be valid: abcde@california.living" name="emailTypoChecker should be valid: abcde@california.living" time="0">
     </testcase>
     <testcase classname="emailTypoChecker should be valid: abcde@skeet.ing" name="emailTypoChecker should be valid: abcde@skeet.ing" time="0.001">
+=======
+    <testcase classname="emailTypoChecker should be valid: abcde@letsmakea.deal" name="emailTypoChecker should be valid: abcde@letsmakea.deal" time="0.001">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@skeet.now" name="emailTypoChecker should be valid: abcde@skeet.now" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@everyone.みんな" name="emailTypoChecker should be valid: abcde@everyone.みんな" time="0.001">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@bourgeois.lifestyle" name="emailTypoChecker should be valid: abcde@bourgeois.lifestyle" time="0">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@california.living" name="emailTypoChecker should be valid: abcde@california.living" time="0.001">
+    </testcase>
+    <testcase classname="emailTypoChecker should be valid: abcde@skeet.ing" name="emailTypoChecker should be valid: abcde@skeet.ing" time="0">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="emailTypoChecker should be valid: abcde@listeningto.music" name="emailTypoChecker should be valid: abcde@listeningto.music" time="0">
     </testcase>
     <testcase classname="emailTypoChecker should be valid: abcde@createa.meme" name="emailTypoChecker should be valid: abcde@createa.meme" time="0.001">
     </testcase>
   </testsuite>
+<<<<<<< HEAD
   <testsuite name="Not implemented platform functions" errors="0" failures="0" skipped="0" timestamp="2025-05-26T09:38:40" time="0.189" tests="3">
     <testcase classname="Not implemented platform functions getIsReducedMotionEnabled should throw NotImplementedError" name="Not implemented platform functions getIsReducedMotionEnabled should throw NotImplementedError" time="0.027">
     </testcase>
@@ -1752,6 +2752,154 @@ function MyText({ foo }) {
     <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 4, returns undefined" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 4, returns undefined" time="0">
     </testcase>
     <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 5, returns undefined" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 5, returns undefined" time="0.001">
+=======
+  <testsuite name="schema validation" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:07" time="0.181" tests="5">
+    <testcase classname="schema validation tryParse parses and validates a correct schema" name="schema validation tryParse parses and validates a correct schema" time="0.006">
+    </testcase>
+    <testcase classname="schema validation tryParse returns undefined for invalid JSON" name="schema validation tryParse returns undefined for invalid JSON" time="0.001">
+    </testcase>
+    <testcase classname="schema validation tryParse returns undefined for JSON that fails validation" name="schema validation tryParse returns undefined for JSON that fails validation" time="0.003">
+    </testcase>
+    <testcase classname="schema validation tryStringify returns a string for valid input" name="schema validation tryStringify returns a string for valid input" time="0.001">
+    </testcase>
+    <testcase classname="schema validation tryStringify returns undefined for invalid input" name="schema validation tryStringify returns undefined for invalid input" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="dateDiff" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:07" time="0.819" tests="22">
+    <testcase classname="dateDiff works with numbers" name="dateDiff works with numbers" time="0.622">
+    </testcase>
+    <testcase classname="dateDiff works with strings" name="dateDiff works with strings" time="0.001">
+    </testcase>
+    <testcase classname="dateDiff works with dates" name="dateDiff works with dates" time="0.003">
+    </testcase>
+    <testcase classname="dateDiff equal values return now" name="dateDiff equal values return now" time="0">
+    </testcase>
+    <testcase classname="dateDiff future dates return now" name="dateDiff future dates return now" time="0.001">
+    </testcase>
+    <testcase classname="dateDiff values &lt; 5 seconds ago return now" name="dateDiff values &lt; 5 seconds ago return now" time="0.001">
+    </testcase>
+    <testcase classname="dateDiff values &gt;= 5 seconds ago return seconds" name="dateDiff values &gt;= 5 seconds ago return seconds" time="0">
+    </testcase>
+    <testcase classname="dateDiff values &lt; 1 min return seconds" name="dateDiff values &lt; 1 min return seconds" time="0.001">
+    </testcase>
+    <testcase classname="dateDiff values &gt;= 1 min return minutes" name="dateDiff values &gt;= 1 min return minutes" time="0">
+    </testcase>
+    <testcase classname="dateDiff minutes round down" name="dateDiff minutes round down" time="0.001">
+    </testcase>
+    <testcase classname="dateDiff values &lt; 1 hour return minutes" name="dateDiff values &lt; 1 hour return minutes" time="0">
+    </testcase>
+    <testcase classname="dateDiff values &gt;= 1 hour return hours" name="dateDiff values &gt;= 1 hour return hours" time="0">
+    </testcase>
+    <testcase classname="dateDiff hours round down" name="dateDiff hours round down" time="0">
+    </testcase>
+    <testcase classname="dateDiff values &lt; 1 day return hours" name="dateDiff values &lt; 1 day return hours" time="0">
+    </testcase>
+    <testcase classname="dateDiff values &gt;= 1 day return days" name="dateDiff values &gt;= 1 day return days" time="0.001">
+    </testcase>
+    <testcase classname="dateDiff days round down" name="dateDiff days round down" time="0">
+    </testcase>
+    <testcase classname="dateDiff values &lt; 30 days return days" name="dateDiff values &lt; 30 days return days" time="0.001">
+    </testcase>
+    <testcase classname="dateDiff values &gt;= 30 days return months" name="dateDiff values &gt;= 30 days return months" time="0.004">
+    </testcase>
+    <testcase classname="dateDiff months round down" name="dateDiff months round down" time="0.001">
+    </testcase>
+    <testcase classname="dateDiff values are rounded by increments of 30" name="dateDiff values are rounded by increments of 30" time="0">
+    </testcase>
+    <testcase classname="dateDiff values &lt; 360 days return months" name="dateDiff values &lt; 360 days return months" time="0.001">
+    </testcase>
+    <testcase classname="dateDiff values &gt;= 360 days return the earlier value" name="dateDiff values &gt;= 360 days return the earlier value" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="getLikelyType" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:07" time="0.225" tests="6">
+    <testcase classname="getLikelyType correctly handles non-parsed url" name="getLikelyType correctly handles non-parsed url" time="0.011">
+    </testcase>
+    <testcase classname="getLikelyType handles non-string urls without crashing" name="getLikelyType handles non-string urls without crashing" time="0.001">
+    </testcase>
+    <testcase classname="resolveShortLink resolves a short link successfully" name="resolveShortLink resolves a short link successfully" time="0.002">
+    </testcase>
+    <testcase classname="resolveShortLink returns the short link if fetch fails with non-200 status" name="resolveShortLink returns the short link if fetch fails with non-200 status" time="0.001">
+    </testcase>
+    <testcase classname="resolveShortLink returns the short link if fetch throws an error" name="resolveShortLink returns the short link if fetch throws an error" time="0.008">
+    </testcase>
+    <testcase classname="resolveShortLink aborts the request after timeout" name="resolveShortLink aborts the request after timeout" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="persisted storage" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:07" time="0.172" tests="5">
+    <testcase classname="persisted storage init should initialize with defaults when storage is empty" name="persisted storage init should initialize with defaults when storage is empty" time="0.006">
+    </testcase>
+    <testcase classname="persisted storage init should initialize with stored values" name="persisted storage init should initialize with stored values" time="0.052">
+    </testcase>
+    <testcase classname="persisted storage get should return correct value from state" name="persisted storage get should return correct value from state" time="0">
+    </testcase>
+    <testcase classname="persisted storage write should write new values to state and storage" name="persisted storage write should write new values to state and storage" time="0.009">
+    </testcase>
+    <testcase classname="persisted storage clearStorage should call AsyncStorage.removeItem" name="persisted storage clearStorage should call AsyncStorage.removeItem" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="consoleTransport (web)" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:07" time="0.243" tests="3">
+    <testcase classname="consoleTransport (web) logs message without metadata" name="consoleTransport (web) logs message without metadata" time="0.079">
+    </testcase>
+    <testcase classname="consoleTransport (web) logs message with metadata" name="consoleTransport (web) logs message with metadata" time="0.002">
+    </testcase>
+    <testcase classname="consoleTransport (web) logs error stack trace" name="consoleTransport (web) logs error stack trace" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="makeValidHandle" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.144" tests="20">
+    <testcase classname="makeValidHandle should truncate and sanitize string &gt; 20 characters" name="makeValidHandle should truncate and sanitize string &gt; 20 characters" time="0.001">
+    </testcase>
+    <testcase classname="makeValidHandle should lowercase and strip invalid chars" name="makeValidHandle should lowercase and strip invalid chars" time="0">
+    </testcase>
+    <testcase classname="makeValidHandle should remove non-alphanumeric chars at start" name="makeValidHandle should remove non-alphanumeric chars at start" time="0.001">
+    </testcase>
+    <testcase classname="handle validation should be valid: ali.bsky.social" name="handle validation should be valid: ali.bsky.social" time="0">
+    </testcase>
+    <testcase classname="handle validation should be valid: alice.bsky.social" name="handle validation should be valid: alice.bsky.social" time="0.001">
+    </testcase>
+    <testcase classname="handle validation should be valid: a-lice.bsky.social" name="handle validation should be valid: a-lice.bsky.social" time="0">
+    </testcase>
+    <testcase classname="handle validation should be valid: a-----lice.bsky.social" name="handle validation should be valid: a-----lice.bsky.social" time="0.012">
+    </testcase>
+    <testcase classname="handle validation should be valid: 123.bsky.social" name="handle validation should be valid: 123.bsky.social" time="0">
+    </testcase>
+    <testcase classname="handle validation should be valid: 123456789012345678.bsky.social" name="handle validation should be valid: 123456789012345678.bsky.social" time="0.001">
+    </testcase>
+    <testcase classname="handle validation should be valid: alice.custom-pds.com" name="handle validation should be valid: alice.custom-pds.com" time="0">
+    </testcase>
+    <testcase classname="handle validation should be valid: alice.my-custom-pds-with-long-name.social" name="handle validation should be valid: alice.my-custom-pds-with-long-name.social" time="0">
+    </testcase>
+    <testcase classname="handle validation should be valid: 123456789012345678.my-custom-pds-with-long-name.social" name="handle validation should be valid: 123456789012345678.my-custom-pds-with-long-name.social" time="0.001">
+    </testcase>
+    <testcase classname="handle validation should be invalid: al.bsky.social due to frontLength" name="handle validation should be invalid: al.bsky.social due to frontLength" time="0.001">
+    </testcase>
+    <testcase classname="handle validation should be invalid: -alice.bsky.social due to hyphenStartOrEnd" name="handle validation should be invalid: -alice.bsky.social due to hyphenStartOrEnd" time="0.001">
+    </testcase>
+    <testcase classname="handle validation should be invalid: alice-.bsky.social due to hyphenStartOrEnd" name="handle validation should be invalid: alice-.bsky.social due to hyphenStartOrEnd" time="0.01">
+    </testcase>
+    <testcase classname="handle validation should be invalid: %%%.bsky.social due to handleChars" name="handle validation should be invalid: %%%.bsky.social due to handleChars" time="0">
+    </testcase>
+    <testcase classname="handle validation should be invalid: 1234567890123456789.bsky.social due to frontLength" name="handle validation should be invalid: 1234567890123456789.bsky.social due to frontLength" time="0.001">
+    </testcase>
+    <testcase classname="handle validation should be invalid: 1234567890123456789.my-custom-pds-with-long-name.social due to frontLength" name="handle validation should be invalid: 1234567890123456789.my-custom-pds-with-long-name.social due to frontLength" time="0">
+    </testcase>
+    <testcase classname="handle validation should be invalid: al.my-custom-pds-with-long-name.social due to frontLength" name="handle validation should be invalid: al.my-custom-pds-with-long-name.social due to frontLength" time="0">
+    </testcase>
+    <testcase classname="handle validation should be invalid: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.toolong.com due to totalLength" name="handle validation should be invalid: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.toolong.com due to totalLength" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="getMentionAt" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.19" tests="52">
+    <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 0, returns undefined" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 0, returns undefined" time="0.001">
+    </testcase>
+    <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 1, returns undefined" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 1, returns undefined" time="0.016">
+    </testcase>
+    <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 2, returns undefined" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 2, returns undefined" time="0">
+    </testcase>
+    <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 3, returns undefined" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 3, returns undefined" time="0.001">
+    </testcase>
+    <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 4, returns undefined" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 4, returns undefined" time="0">
+    </testcase>
+    <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 5, returns undefined" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 5, returns undefined" time="0">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 6, returns &quot;alice&quot;" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 6, returns &quot;alice&quot;" time="0">
     </testcase>
@@ -1759,7 +2907,11 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 8, returns &quot;alice&quot;" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 8, returns &quot;alice&quot;" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 9, returns &quot;alice&quot;" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 9, returns &quot;alice&quot;" time="0">
+=======
+    <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 9, returns &quot;alice&quot;" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 9, returns &quot;alice&quot;" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 10, returns &quot;alice&quot;" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 10, returns &quot;alice&quot;" time="0.001">
     </testcase>
@@ -1771,6 +2923,7 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 14, returns undefined" name="getMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 14, returns undefined" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="getMentionAt given input string &quot;@alice&quot; and cursor position 0, returns &quot;alice&quot;" name="getMentionAt given input string &quot;@alice&quot; and cursor position 0, returns &quot;alice&quot;" time="0.001">
     </testcase>
     <testcase classname="getMentionAt given input string &quot;@alice hello&quot; and cursor position 0, returns &quot;alice&quot;" name="getMentionAt given input string &quot;@alice hello&quot; and cursor position 0, returns &quot;alice&quot;" time="0">
@@ -1784,11 +2937,27 @@ function MyText({ foo }) {
     <testcase classname="getMentionAt given input string &quot;@alice hello&quot; and cursor position 4, returns &quot;alice&quot;" name="getMentionAt given input string &quot;@alice hello&quot; and cursor position 4, returns &quot;alice&quot;" time="0.001">
     </testcase>
     <testcase classname="getMentionAt given input string &quot;@alice hello&quot; and cursor position 5, returns &quot;alice&quot;" name="getMentionAt given input string &quot;@alice hello&quot; and cursor position 5, returns &quot;alice&quot;" time="0">
+=======
+    <testcase classname="getMentionAt given input string &quot;@alice&quot; and cursor position 0, returns &quot;alice&quot;" name="getMentionAt given input string &quot;@alice&quot; and cursor position 0, returns &quot;alice&quot;" time="0">
+    </testcase>
+    <testcase classname="getMentionAt given input string &quot;@alice hello&quot; and cursor position 0, returns &quot;alice&quot;" name="getMentionAt given input string &quot;@alice hello&quot; and cursor position 0, returns &quot;alice&quot;" time="0.001">
+    </testcase>
+    <testcase classname="getMentionAt given input string &quot;@alice hello&quot; and cursor position 1, returns &quot;alice&quot;" name="getMentionAt given input string &quot;@alice hello&quot; and cursor position 1, returns &quot;alice&quot;" time="0.005">
+    </testcase>
+    <testcase classname="getMentionAt given input string &quot;@alice hello&quot; and cursor position 2, returns &quot;alice&quot;" name="getMentionAt given input string &quot;@alice hello&quot; and cursor position 2, returns &quot;alice&quot;" time="0.001">
+    </testcase>
+    <testcase classname="getMentionAt given input string &quot;@alice hello&quot; and cursor position 3, returns &quot;alice&quot;" name="getMentionAt given input string &quot;@alice hello&quot; and cursor position 3, returns &quot;alice&quot;" time="0">
+    </testcase>
+    <testcase classname="getMentionAt given input string &quot;@alice hello&quot; and cursor position 4, returns &quot;alice&quot;" name="getMentionAt given input string &quot;@alice hello&quot; and cursor position 4, returns &quot;alice&quot;" time="0">
+    </testcase>
+    <testcase classname="getMentionAt given input string &quot;@alice hello&quot; and cursor position 5, returns &quot;alice&quot;" name="getMentionAt given input string &quot;@alice hello&quot; and cursor position 5, returns &quot;alice&quot;" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="getMentionAt given input string &quot;@alice hello&quot; and cursor position 6, returns &quot;alice&quot;" name="getMentionAt given input string &quot;@alice hello&quot; and cursor position 6, returns &quot;alice&quot;" time="0">
     </testcase>
     <testcase classname="getMentionAt given input string &quot;@alice hello&quot; and cursor position 7, returns undefined" name="getMentionAt given input string &quot;@alice hello&quot; and cursor position 7, returns undefined" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="getMentionAt given input string &quot;alice@alice&quot; and cursor position 0, returns undefined" name="getMentionAt given input string &quot;alice@alice&quot; and cursor position 0, returns undefined" time="0.001">
     </testcase>
     <testcase classname="getMentionAt given input string &quot;alice@alice&quot; and cursor position 6, returns undefined" name="getMentionAt given input string &quot;alice@alice&quot; and cursor position 6, returns undefined" time="0">
@@ -1802,11 +2971,27 @@ function MyText({ foo }) {
     <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 3, returns &quot;hello @alice goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 3, returns &quot;hello @alice goodbye&quot;" time="0">
     </testcase>
     <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 4, returns &quot;hello @alice goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 4, returns &quot;hello @alice goodbye&quot;" time="0.001">
+=======
+    <testcase classname="getMentionAt given input string &quot;alice@alice&quot; and cursor position 0, returns undefined" name="getMentionAt given input string &quot;alice@alice&quot; and cursor position 0, returns undefined" time="0">
+    </testcase>
+    <testcase classname="getMentionAt given input string &quot;alice@alice&quot; and cursor position 6, returns undefined" name="getMentionAt given input string &quot;alice@alice&quot; and cursor position 6, returns undefined" time="0.001">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 0, returns &quot;hello @alice goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 0, returns &quot;hello @alice goodbye&quot;" time="0">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 1, returns &quot;hello @alice goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 1, returns &quot;hello @alice goodbye&quot;" time="0.001">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 2, returns &quot;hello @alice goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 2, returns &quot;hello @alice goodbye&quot;" time="0">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 3, returns &quot;hello @alice goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 3, returns &quot;hello @alice goodbye&quot;" time="0.006">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 4, returns &quot;hello @alice goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 4, returns &quot;hello @alice goodbye&quot;" time="0">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 5, returns &quot;hello @alice goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 5, returns &quot;hello @alice goodbye&quot;" time="0">
     </testcase>
     <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 6, returns &quot;hello @alice.com  goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 6, returns &quot;hello @alice.com  goodbye&quot;" time="0.001">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 7, returns &quot;hello @alice.com  goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 7, returns &quot;hello @alice.com  goodbye&quot;" time="0.001">
     </testcase>
     <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 8, returns &quot;hello @alice.com  goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 8, returns &quot;hello @alice.com  goodbye&quot;" time="0">
@@ -1824,23 +3009,51 @@ function MyText({ foo }) {
     <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 14, returns &quot;hello @alice goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 14, returns &quot;hello @alice goodbye&quot;" time="0">
     </testcase>
     <testcase classname="insertMentionAt given input string &quot;@alice&quot; and cursor position 0, returns &quot;@alice.com &quot;" name="insertMentionAt given input string &quot;@alice&quot; and cursor position 0, returns &quot;@alice.com &quot;" time="0">
+=======
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 7, returns &quot;hello @alice.com  goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 7, returns &quot;hello @alice.com  goodbye&quot;" time="0">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 8, returns &quot;hello @alice.com  goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 8, returns &quot;hello @alice.com  goodbye&quot;" time="0">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 9, returns &quot;hello @alice.com  goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 9, returns &quot;hello @alice.com  goodbye&quot;" time="0">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 10, returns &quot;hello @alice.com  goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 10, returns &quot;hello @alice.com  goodbye&quot;" time="0">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 11, returns &quot;hello @alice.com  goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 11, returns &quot;hello @alice.com  goodbye&quot;" time="0.001">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 12, returns &quot;hello @alice.com  goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 12, returns &quot;hello @alice.com  goodbye&quot;" time="0">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 13, returns &quot;hello @alice goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 13, returns &quot;hello @alice goodbye&quot;" time="0">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 14, returns &quot;hello @alice goodbye&quot;" name="insertMentionAt given input string &quot;hello @alice goodbye&quot; and cursor position 14, returns &quot;hello @alice goodbye&quot;" time="0">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;@alice&quot; and cursor position 0, returns &quot;@alice.com &quot;" name="insertMentionAt given input string &quot;@alice&quot; and cursor position 0, returns &quot;@alice.com &quot;" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 0, returns &quot;@alice.com  hello&quot;" name="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 0, returns &quot;@alice.com  hello&quot;" time="0">
     </testcase>
     <testcase classname="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 1, returns &quot;@alice.com  hello&quot;" name="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 1, returns &quot;@alice.com  hello&quot;" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 2, returns &quot;@alice.com  hello&quot;" name="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 2, returns &quot;@alice.com  hello&quot;" time="0.001">
+=======
+    <testcase classname="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 2, returns &quot;@alice.com  hello&quot;" name="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 2, returns &quot;@alice.com  hello&quot;" time="0">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 3, returns &quot;@alice.com  hello&quot;" name="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 3, returns &quot;@alice.com  hello&quot;" time="0">
     </testcase>
     <testcase classname="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 4, returns &quot;@alice.com  hello&quot;" name="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 4, returns &quot;@alice.com  hello&quot;" time="0.001">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 5, returns &quot;@alice.com  hello&quot;" name="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 5, returns &quot;@alice.com  hello&quot;" time="0">
+=======
+    <testcase classname="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 5, returns &quot;@alice.com  hello&quot;" name="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 5, returns &quot;@alice.com  hello&quot;" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 6, returns &quot;@alice.com  hello&quot;" name="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 6, returns &quot;@alice.com  hello&quot;" time="0">
     </testcase>
     <testcase classname="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 7, returns &quot;@alice hello&quot;" name="insertMentionAt given input string &quot;@alice hello&quot; and cursor position 7, returns &quot;@alice hello&quot;" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="insertMentionAt given input string &quot;alice@alice&quot; and cursor position 0, returns &quot;alice@alice&quot;" name="insertMentionAt given input string &quot;alice@alice&quot; and cursor position 0, returns &quot;alice@alice&quot;" time="0">
     </testcase>
     <testcase classname="insertMentionAt given input string &quot;alice@alice&quot; and cursor position 6, returns &quot;alice@alice&quot;" name="insertMentionAt given input string &quot;alice@alice&quot; and cursor position 6, returns &quot;alice@alice&quot;" time="0.001">
@@ -1902,6 +3115,17 @@ function MyText({ foo }) {
     <testcase classname="enforceLen returns string if shorter than limit" name="enforceLen returns string if shorter than limit" time="0.001">
     </testcase>
     <testcase classname="enforceLen truncates without ellipsis" name="enforceLen truncates without ellipsis" time="0">
+=======
+    <testcase classname="insertMentionAt given input string &quot;alice@alice&quot; and cursor position 0, returns &quot;alice@alice&quot;" name="insertMentionAt given input string &quot;alice@alice&quot; and cursor position 0, returns &quot;alice@alice&quot;" time="0.001">
+    </testcase>
+    <testcase classname="insertMentionAt given input string &quot;alice@alice&quot; and cursor position 6, returns &quot;alice@alice&quot;" name="insertMentionAt given input string &quot;alice@alice&quot; and cursor position 6, returns &quot;alice@alice&quot;" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="enforceLen" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.219" tests="16">
+    <testcase classname="enforceLen returns string if shorter than limit" name="enforceLen returns string if shorter than limit" time="0.004">
+    </testcase>
+    <testcase classname="enforceLen truncates without ellipsis" name="enforceLen truncates without ellipsis" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="enforceLen truncates with ellipsis (end)" name="enforceLen truncates with ellipsis (end)" time="0">
     </testcase>
@@ -1909,6 +3133,7 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="enforceLen falls back on unknown mode" name="enforceLen falls back on unknown mode" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="enforceLen handles empty or undefined string" name="enforceLen handles empty or undefined string" time="0.001">
     </testcase>
     <testcase classname="useEnforceMaxGraphemeCount limits text to grapheme count" name="useEnforceMaxGraphemeCount limits text to grapheme count" time="0.028">
@@ -1916,11 +3141,21 @@ function MyText({ foo }) {
     <testcase classname="useWarnMaxGraphemeCount warns if grapheme count is over max" name="useWarnMaxGraphemeCount warns if grapheme count is over max" time="0.006">
     </testcase>
     <testcase classname="toHashCode generates consistent hash" name="toHashCode generates consistent hash" time="0.001">
+=======
+    <testcase classname="enforceLen handles empty or undefined string" name="enforceLen handles empty or undefined string" time="0">
+    </testcase>
+    <testcase classname="useEnforceMaxGraphemeCount limits text to grapheme count" name="useEnforceMaxGraphemeCount limits text to grapheme count" time="0.028">
+    </testcase>
+    <testcase classname="useWarnMaxGraphemeCount warns if grapheme count is over max" name="useWarnMaxGraphemeCount warns if grapheme count is over max" time="0.003">
+    </testcase>
+    <testcase classname="toHashCode generates consistent hash" name="toHashCode generates consistent hash" time="0">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="toHashCode generates different hash for different strings" name="toHashCode generates different hash for different strings" time="0">
     </testcase>
     <testcase classname="toHashCode supports seed" name="toHashCode supports seed" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="countLines counts newlines in string" name="countLines counts newlines in string" time="0.003">
     </testcase>
     <testcase classname="countLines returns 0 for undefined" name="countLines returns 0 for undefined" time="0.001">
@@ -1928,10 +3163,20 @@ function MyText({ foo }) {
     <testcase classname="augmentSearchQuery replaces from:me outside quotes" name="augmentSearchQuery replaces from:me outside quotes" time="0.001">
     </testcase>
     <testcase classname="augmentSearchQuery returns same query if no DID" name="augmentSearchQuery returns same query if no DID" time="0.001">
+=======
+    <testcase classname="countLines counts newlines in string" name="countLines counts newlines in string" time="0.001">
+    </testcase>
+    <testcase classname="countLines returns 0 for undefined" name="countLines returns 0 for undefined" time="0">
+    </testcase>
+    <testcase classname="augmentSearchQuery replaces from:me outside quotes" name="augmentSearchQuery replaces from:me outside quotes" time="0.001">
+    </testcase>
+    <testcase classname="augmentSearchQuery returns same query if no DID" name="augmentSearchQuery returns same query if no DID" time="0.002">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="augmentSearchQuery handles empty string" name="augmentSearchQuery handles empty string" time="0">
     </testcase>
   </testsuite>
+<<<<<<< HEAD
   <testsuite name="general functionality" errors="0" failures="0" skipped="0" timestamp="2025-05-26T09:38:40" time="0.171" tests="16">
     <testcase classname="general functionality default params" name="general functionality default params" time="0.002">
     </testcase>
@@ -1944,11 +3189,32 @@ function MyText({ foo }) {
     <testcase classname="general functionality supports nullish/falsy metadata" name="general functionality supports nullish/falsy metadata" time="0.01">
     </testcase>
     <testcase classname="general functionality sentryTransport" name="general functionality sentryTransport" time="0.005">
+=======
+  <testsuite name="useAppState" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.18" tests="2">
+    <testcase classname="useAppState initializes with AppState.currentState" name="useAppState initializes with AppState.currentState" time="0.018">
+    </testcase>
+    <testcase classname="useAppState updates state when AppState changes" name="useAppState updates state when AppState changes" time="0.018">
+    </testcase>
+  </testsuite>
+  <testsuite name="general functionality" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.17" tests="16">
+    <testcase classname="general functionality default params" name="general functionality default params" time="0.001">
+    </testcase>
+    <testcase classname="general functionality can override default params" name="general functionality can override default params" time="0.014">
+    </testcase>
+    <testcase classname="general functionality contextFilter overrides level" name="general functionality contextFilter overrides level" time="0.001">
+    </testcase>
+    <testcase classname="general functionality supports extra metadata" name="general functionality supports extra metadata" time="0.002">
+    </testcase>
+    <testcase classname="general functionality supports nullish/falsy metadata" name="general functionality supports nullish/falsy metadata" time="0.002">
+    </testcase>
+    <testcase classname="general functionality sentryTransport" name="general functionality sentryTransport" time="0.004">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="general functionality sentryTransport serializes errors" name="general functionality sentryTransport serializes errors" time="0.001">
     </testcase>
     <testcase classname="general functionality add/remove transport" name="general functionality add/remove transport" time="0.001">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="create create" name="create create" time="0.003">
     </testcase>
     <testcase classname="debug contexts specific" name="debug contexts specific" time="0.001">
@@ -1960,12 +3226,60 @@ function MyText({ foo }) {
     <testcase classname="supports levels debug" name="supports levels debug" time="0.001">
     </testcase>
     <testcase classname="supports levels info" name="supports levels info" time="0.001">
+=======
+    <testcase classname="create create" name="create create" time="0.001">
+    </testcase>
+    <testcase classname="debug contexts specific" name="debug contexts specific" time="0.001">
+    </testcase>
+    <testcase classname="debug contexts namespaced" name="debug contexts namespaced" time="0.001">
+    </testcase>
+    <testcase classname="debug contexts ignores inactive" name="debug contexts ignores inactive" time="0.001">
+    </testcase>
+    <testcase classname="supports levels debug" name="supports levels debug" time="0.002">
+    </testcase>
+    <testcase classname="supports levels info" name="supports levels info" time="0.002">
+    </testcase>
+    <testcase classname="supports levels warn" name="supports levels warn" time="0">
+    </testcase>
+    <testcase classname="supports levels error" name="supports levels error" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="general functionality" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.216" tests="16">
+    <testcase classname="general functionality default params" name="general functionality default params" time="0.001">
+    </testcase>
+    <testcase classname="general functionality can override default params" name="general functionality can override default params" time="0.014">
+    </testcase>
+    <testcase classname="general functionality contextFilter overrides level" name="general functionality contextFilter overrides level" time="0.005">
+    </testcase>
+    <testcase classname="general functionality supports extra metadata" name="general functionality supports extra metadata" time="0.006">
+    </testcase>
+    <testcase classname="general functionality supports nullish/falsy metadata" name="general functionality supports nullish/falsy metadata" time="0.001">
+    </testcase>
+    <testcase classname="general functionality sentryTransport" name="general functionality sentryTransport" time="0.018">
+    </testcase>
+    <testcase classname="general functionality sentryTransport serializes errors" name="general functionality sentryTransport serializes errors" time="0.001">
+    </testcase>
+    <testcase classname="general functionality add/remove transport" name="general functionality add/remove transport" time="0.002">
+    </testcase>
+    <testcase classname="create create" name="create create" time="0.009">
+    </testcase>
+    <testcase classname="debug contexts specific" name="debug contexts specific" time="0.003">
+    </testcase>
+    <testcase classname="debug contexts namespaced" name="debug contexts namespaced" time="0.001">
+    </testcase>
+    <testcase classname="debug contexts ignores inactive" name="debug contexts ignores inactive" time="0">
+    </testcase>
+    <testcase classname="supports levels debug" name="supports levels debug" time="0.005">
+    </testcase>
+    <testcase classname="supports levels info" name="supports levels info" time="0">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="supports levels warn" name="supports levels warn" time="0.001">
     </testcase>
     <testcase classname="supports levels error" name="supports levels error" time="0.001">
     </testcase>
   </testsuite>
+<<<<<<< HEAD
   <testsuite name="makeValidHandle" errors="0" failures="0" skipped="0" timestamp="2025-05-26T09:38:40" time="0.133" tests="20">
     <testcase classname="makeValidHandle should truncate and sanitize string &gt; 20 characters" name="makeValidHandle should truncate and sanitize string &gt; 20 characters" time="0.001">
     </testcase>
@@ -2020,6 +3334,28 @@ function MyText({ foo }) {
     <testcase classname="cleanError returns empty string if input is falsy" name="cleanError returns empty string if input is falsy" time="0.001">
     </testcase>
     <testcase classname="cleanError converts non-string errors to string" name="cleanError converts non-string errors to string" time="0.021">
+=======
+  <testsuite name="clamp" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.128" tests="1">
+    <testcase classname="clamp correctly clamps any given number and range" name="clamp correctly clamps any given number and range" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="retry utility" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.148" tests="5">
+    <testcase classname="retry utility should return result if function succeeds on first try" name="retry utility should return result if function succeeds on first try" time="0.002">
+    </testcase>
+    <testcase classname="retry utility should retry if cond returns true on failure" name="retry utility should retry if cond returns true on failure" time="0.012">
+    </testcase>
+    <testcase classname="retry utility should throw if cond returns false" name="retry utility should throw if cond returns false" time="0.016">
+    </testcase>
+    <testcase classname="retry utility should throw last error if all retries exhausted" name="retry utility should throw last error if all retries exhausted" time="0.001">
+    </testcase>
+    <testcase classname="retry utility networkRetry should delegate to retry with isNetworkError" name="retry utility networkRetry should delegate to retry with isNetworkError" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="cleanError" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.141" tests="11">
+    <testcase classname="cleanError returns empty string if input is falsy" name="cleanError returns empty string if input is falsy" time="0.001">
+    </testcase>
+    <testcase classname="cleanError converts non-string errors to string" name="cleanError converts non-string errors to string" time="0.014">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="cleanError returns network error message" name="cleanError returns network error message" time="0.001">
     </testcase>
@@ -2031,15 +3367,24 @@ function MyText({ foo }) {
     </testcase>
     <testcase classname="cleanError returns unrecognized string as-is" name="cleanError returns unrecognized string as-is" time="0">
     </testcase>
+<<<<<<< HEAD
     <testcase classname="isNetworkError correctly distinguishes network errors for TypeError: Network request failed" name="isNetworkError correctly distinguishes network errors for TypeError: Network request failed" time="0">
     </testcase>
     <testcase classname="isNetworkError correctly distinguishes network errors for Uncaught TypeError: Cannot read property x of undefined" name="isNetworkError correctly distinguishes network errors for Uncaught TypeError: Cannot read property x of undefined" time="0.001">
     </testcase>
     <testcase classname="isNetworkError correctly distinguishes network errors for Uncaught RangeError" name="isNetworkError correctly distinguishes network errors for Uncaught RangeError" time="0">
+=======
+    <testcase classname="isNetworkError correctly distinguishes network errors for TypeError: Network request failed" name="isNetworkError correctly distinguishes network errors for TypeError: Network request failed" time="0.001">
+    </testcase>
+    <testcase classname="isNetworkError correctly distinguishes network errors for Uncaught TypeError: Cannot read property x of undefined" name="isNetworkError correctly distinguishes network errors for Uncaught TypeError: Cannot read property x of undefined" time="0">
+    </testcase>
+    <testcase classname="isNetworkError correctly distinguishes network errors for Uncaught RangeError" name="isNetworkError correctly distinguishes network errors for Uncaught RangeError" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="isNetworkError correctly distinguishes network errors for Error: Aborted" name="isNetworkError correctly distinguishes network errors for Error: Aborted" time="0">
     </testcase>
   </testsuite>
+<<<<<<< HEAD
   <testsuite name="useAppState" errors="0" failures="0" skipped="0" timestamp="2025-05-26T09:38:41" time="0.127" tests="2">
     <testcase classname="useAppState initializes with AppState.currentState" name="useAppState initializes with AppState.currentState" time="0.014">
     </testcase>
@@ -2054,18 +3399,124 @@ function MyText({ foo }) {
     <testcase classname="Event Emitter Utility should emit and listen for network-confirmed" name="Event Emitter Utility should emit and listen for network-confirmed" time="0">
     </testcase>
     <testcase classname="Event Emitter Utility should emit and listen for network-lost" name="Event Emitter Utility should emit and listen for network-lost" time="0">
+=======
+  <testsuite name="Utility function tests" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.149" tests="7">
+    <testcase classname="Utility function tests isObj returns true for plain objects" name="Utility function tests isObj returns true for plain objects" time="0.003">
+    </testcase>
+    <testcase classname="Utility function tests isObj returns false for null, arrays, primitives, functions" name="Utility function tests isObj returns false for null, arrays, primitives, functions" time="0.001">
+    </testcase>
+    <testcase classname="Utility function tests hasProp returns true if property exists" name="Utility function tests hasProp returns true if property exists" time="0">
+    </testcase>
+    <testcase classname="Utility function tests hasProp returns false if property does not exist" name="Utility function tests hasProp returns false if property does not exist" time="0.003">
+    </testcase>
+    <testcase classname="Utility function tests hasProp works with inherited properties" name="Utility function tests hasProp works with inherited properties" time="0">
+    </testcase>
+    <testcase classname="Utility function tests isStrArray returns true for arrays of strings" name="Utility function tests isStrArray returns true for arrays of strings" time="0.001">
+    </testcase>
+    <testcase classname="Utility function tests isStrArray returns false for non-array or array with non-string elements" name="Utility function tests isStrArray returns false for non-array or array with non-string elements" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Labelers AsyncStorage helpers" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.103" tests="3">
+    <testcase classname="Labelers AsyncStorage helpers saveLabelers stores the JSON stringified value" name="Labelers AsyncStorage helpers saveLabelers stores the JSON stringified value" time="0.004">
+    </testcase>
+    <testcase classname="Labelers AsyncStorage helpers readLabelers returns parsed array when data exists" name="Labelers AsyncStorage helpers readLabelers returns parsed array when data exists" time="0.001">
+    </testcase>
+    <testcase classname="Labelers AsyncStorage helpers readLabelers returns undefined when no data" name="Labelers AsyncStorage helpers readLabelers returns undefined when no data" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="choose" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.151" tests="17">
+    <testcase classname="choose returns value for existing key" name="choose returns value for existing key" time="0.001">
+    </testcase>
+    <testcase classname="dedupArray removes duplicates" name="dedupArray removes duplicates" time="0.002">
+    </testcase>
+    <testcase classname="dedupArray returns empty array for empty input" name="dedupArray returns empty array for empty input" time="0">
+    </testcase>
+    <testcase classname="replaceEqualDeep returns a if a and b are strictly equal" name="replaceEqualDeep returns a if a and b are strictly equal" time="0">
+    </testcase>
+    <testcase classname="replaceEqualDeep returns a if a and b are deeply equal" name="replaceEqualDeep returns a if a and b are deeply equal" time="0.001">
+    </testcase>
+    <testcase classname="replaceEqualDeep returns b if a and b are different types" name="replaceEqualDeep returns b if a and b are different types" time="0.015">
+    </testcase>
+    <testcase classname="replaceEqualDeep returns a if a and b are equal Dates" name="replaceEqualDeep returns a if a and b are equal Dates" time="0.004">
+    </testcase>
+    <testcase classname="replaceEqualDeep returns b if a and b are different Dates" name="replaceEqualDeep returns b if a and b are different Dates" time="0">
+    </testcase>
+    <testcase classname="isPlainArray returns true for plain arrays" name="isPlainArray returns true for plain arrays" time="0.001">
+    </testcase>
+    <testcase classname="isPlainArray returns false for arrays with extra properties" name="isPlainArray returns false for arrays with extra properties" time="0">
+    </testcase>
+    <testcase classname="isPlainArray returns false for non-arrays" name="isPlainArray returns false for non-arrays" time="0">
+    </testcase>
+    <testcase classname="isPlainObject returns true for plain objects" name="isPlainObject returns true for plain objects" time="0.001">
+    </testcase>
+    <testcase classname="isPlainObject returns false for non-objects" name="isPlainObject returns false for non-objects" time="0.002">
+    </testcase>
+    <testcase classname="isPlainObject returns true for objects created with Object.create(proto)" name="isPlainObject returns true for objects created with Object.create(proto)" time="0">
+    </testcase>
+    <testcase classname="isPlainObject returns true for objects with no constructor" name="isPlainObject returns true for objects with no constructor" time="0">
+    </testcase>
+    <testcase classname="isPlainObject returns false for instances of classes" name="isPlainObject returns false for instances of classes" time="0.001">
+    </testcase>
+    <testcase classname="isPlainObject returns false for Date objects" name="isPlainObject returns false for Date objects" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Date Utilities" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.137" tests="9">
+    <testcase classname="Date Utilities niceDate should format the date using i18n.date with correct options" name="Date Utilities niceDate should format the date using i18n.date with correct options" time="0.001">
+    </testcase>
+    <testcase classname="Date Utilities niceDate should accept string and number dates" name="Date Utilities niceDate should accept string and number dates" time="0.017">
+    </testcase>
+    <testcase classname="Date Utilities getAge should return correct age based on birthDate" name="Date Utilities getAge should return correct age based on birthDate" time="0.001">
+    </testcase>
+    <testcase classname="Date Utilities getAge should subtract 1 if birthday has not occurred yet this year" name="Date Utilities getAge should subtract 1 if birthday has not occurred yet this year" time="0.001">
+    </testcase>
+    <testcase classname="Date Utilities getDateAgo should return a date exactly N years ago" name="Date Utilities getDateAgo should return a date exactly N years ago" time="0.003">
+    </testcase>
+    <testcase classname="Date Utilities simpleAreDatesEqual should return true for same year, month, and day" name="Date Utilities simpleAreDatesEqual should return true for same year, month, and day" time="0">
+    </testcase>
+    <testcase classname="Date Utilities simpleAreDatesEqual should return false if year differs" name="Date Utilities simpleAreDatesEqual should return false if year differs" time="0">
+    </testcase>
+    <testcase classname="Date Utilities simpleAreDatesEqual should return false if month differs" name="Date Utilities simpleAreDatesEqual should return false if month differs" time="0.001">
+    </testcase>
+    <testcase classname="Date Utilities simpleAreDatesEqual should return false if day differs" name="Date Utilities simpleAreDatesEqual should return false if day differs" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="LogContext enum" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.127" tests="2">
+    <testcase classname="LogContext enum should have expected context values" name="LogContext enum should have expected context values" time="0.004">
+    </testcase>
+    <testcase classname="LogLevel enum should have expected log level values" name="LogLevel enum should have expected log level values" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Event Emitter Utility" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.097" tests="5">
+    <testcase classname="Event Emitter Utility should emit and listen for soft-reset" name="Event Emitter Utility should emit and listen for soft-reset" time="0.002">
+    </testcase>
+    <testcase classname="Event Emitter Utility should emit and listen for session-dropped" name="Event Emitter Utility should emit and listen for session-dropped" time="0">
+    </testcase>
+    <testcase classname="Event Emitter Utility should emit and listen for network-confirmed" name="Event Emitter Utility should emit and listen for network-confirmed" time="0.001">
+    </testcase>
+    <testcase classname="Event Emitter Utility should emit and listen for network-lost" name="Event Emitter Utility should emit and listen for network-lost" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="Event Emitter Utility should emit and listen for post-created" name="Event Emitter Utility should emit and listen for post-created" time="0.001">
     </testcase>
   </testsuite>
+<<<<<<< HEAD
   <testsuite name="bundle" errors="0" failures="0" skipped="0" timestamp="2025-05-26T09:38:41" time="0.101" tests="3">
     <testcase classname="bundle bundles multiple simultaneous calls into one execution" name="bundle bundles multiple simultaneous calls into one execution" time="0.007">
+=======
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.143" tests="1">
+    <testcase classname=" works" name=" works" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="bundle" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.118" tests="3">
+    <testcase classname="bundle bundles multiple simultaneous calls into one execution" name="bundle bundles multiple simultaneous calls into one execution" time="0.016">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
     <testcase classname="bundle does not bundle non-simultaneous calls" name="bundle does not bundle non-simultaneous calls" time="0.005">
     </testcase>
     <testcase classname="bundle is not affected by rejections" name="bundle is not affected by rejections" time="0.005">
     </testcase>
   </testsuite>
+<<<<<<< HEAD
   <testsuite name="getLocales" errors="0" failures="0" skipped="0" timestamp="2025-05-26T09:38:41" time="0.088" tests="3">
     <testcase classname="getLocales normalizes legacy language codes" name="getLocales normalizes legacy language codes" time="0.001">
     </testcase>
@@ -2097,6 +3548,25 @@ function MyText({ foo }) {
     </testcase>
   </testsuite>
   <testsuite name="#/state/messages/convo" errors="0" failures="0" skipped="0" timestamp="2025-05-26T09:38:41" time="0.15" tests="0">
+=======
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.109" tests="1">
+    <testcase classname=" works" name=" works" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="bitdriftTransport" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:08" time="0.117" tests="5">
+    <testcase classname="bitdriftTransport logs using debug -&gt; debug" name="bitdriftTransport logs using debug -&gt; debug" time="0.001">
+    </testcase>
+    <testcase classname="bitdriftTransport logs using info -&gt; info" name="bitdriftTransport logs using info -&gt; info" time="0">
+    </testcase>
+    <testcase classname="bitdriftTransport logs using log -&gt; info" name="bitdriftTransport logs using log -&gt; info" time="0.001">
+    </testcase>
+    <testcase classname="bitdriftTransport logs using warn -&gt; warn" name="bitdriftTransport logs using warn -&gt; warn" time="0">
+    </testcase>
+    <testcase classname="bitdriftTransport logs using error -&gt; error" name="bitdriftTransport logs using error -&gt; error" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="#/state/messages/convo" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:09" time="0.11" tests="0">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     <testcase classname="#/state/messages/convo init fails if sender and recipients aren&apos;t found" name="#/state/messages/convo init fails if sender and recipients aren&apos;t found" time="0">
     </testcase>
     <testcase classname="#/state/messages/convo init cannot re-initialize from a non-unintialized state" name="#/state/messages/convo init cannot re-initialize from a non-unintialized state" time="0">
@@ -2154,12 +3624,65 @@ function MyText({ foo }) {
     <testcase classname="#/state/messages/convo inactivity above a certain threshold of inactivity, rehydrate entirely fresh state" name="#/state/messages/convo inactivity above a certain threshold of inactivity, rehydrate entirely fresh state" time="0">
     </testcase>
   </testsuite>
+<<<<<<< HEAD
   <testsuite name="clamp" errors="0" failures="0" skipped="0" timestamp="2025-05-26T09:38:41" time="0.107" tests="1">
     <testcase classname="clamp correctly clamps any given number and range" name="clamp correctly clamps any given number and range" time="0.003">
     </testcase>
   </testsuite>
   <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-05-26T09:38:41" time="0.083" tests="1">
     <testcase classname=" works" name=" works" time="0.001">
+=======
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:09" time="0.111" tests="6">
+    <testcase classname=" stores and retrieves data" name=" stores and retrieves data" time="0.002">
+    </testcase>
+    <testcase classname=" removes data" name=" removes data" time="0.013">
+    </testcase>
+    <testcase classname=" removes multiple keys at once" name=" removes multiple keys at once" time="0.001">
+    </testcase>
+    <testcase classname=" concatenates keys" name=" concatenates keys" time="0.001">
+    </testcase>
+    <testcase classname=" can store falsy values" name=" can store falsy values" time="0">
+    </testcase>
+    <testcase classname=" can store objects" name=" can store objects" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="parseSearchQuery" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:09" time="0.166" tests="7">
+    <testcase classname="parseSearchQuery bluesky -&gt; bluesky {}" name="parseSearchQuery bluesky -&gt; bluesky {}" time="0.001">
+    </testcase>
+    <testcase classname="parseSearchQuery bluesky from:esb.lol -&gt; bluesky {&quot;from&quot;: &quot;esb.lol&quot;}" name="parseSearchQuery bluesky from:esb.lol -&gt; bluesky {&quot;from&quot;: &quot;esb.lol&quot;}" time="0.01">
+    </testcase>
+    <testcase classname="parseSearchQuery bluesky &quot;from:esb.lol&quot; -&gt; bluesky &quot;from:esb.lol&quot; {}" name="parseSearchQuery bluesky &quot;from:esb.lol&quot; -&gt; bluesky &quot;from:esb.lol&quot; {}" time="0.001">
+    </testcase>
+    <testcase classname="parseSearchQuery bluesky mentions:@esb.lol -&gt; bluesky {&quot;mentions&quot;: &quot;@esb.lol&quot;}" name="parseSearchQuery bluesky mentions:@esb.lol -&gt; bluesky {&quot;mentions&quot;: &quot;@esb.lol&quot;}" time="0">
+    </testcase>
+    <testcase classname="parseSearchQuery bluesky since:2021-01-01:00:00:00 -&gt; bluesky {&quot;since&quot;: &quot;2021-01-01:00:00:00&quot;}" name="parseSearchQuery bluesky since:2021-01-01:00:00:00 -&gt; bluesky {&quot;since&quot;: &quot;2021-01-01:00:00:00&quot;}" time="0">
+    </testcase>
+    <testcase classname="parseSearchQuery bluesky lang:&quot;en&quot; -&gt; bluesky {&quot;lang&quot;: &quot;en&quot;}" name="parseSearchQuery bluesky lang:&quot;en&quot; -&gt; bluesky {&quot;lang&quot;: &quot;en&quot;}" time="0.001">
+    </testcase>
+    <testcase classname="parseSearchQuery bluesky &quot;literal&quot; lang:en &quot;from:invalid&quot; -&gt; bluesky &quot;literal&quot; &quot;from:invalid&quot; {&quot;lang&quot;: &quot;en&quot;}" name="parseSearchQuery bluesky &quot;literal&quot; lang:en &quot;from:invalid&quot; -&gt; bluesky &quot;literal&quot; &quot;from:invalid&quot; {&quot;lang&quot;: &quot;en&quot;}" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="getLocales" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:09" time="0.099" tests="3">
+    <testcase classname="getLocales normalizes legacy language codes" name="getLocales normalizes legacy language codes" time="0.001">
+    </testcase>
+    <testcase classname="getLocales normalizes Chinese tags" name="getLocales normalizes Chinese tags" time="0">
+    </testcase>
+    <testcase classname="getLocales returns deduplicated deviceLanguageCodes" name="getLocales returns deduplicated deviceLanguageCodes" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="LogContext enum" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:09" time="0.099" tests="2">
+    <testcase classname="LogContext enum should have expected context values" name="LogContext enum should have expected context values" time="0.002">
+    </testcase>
+    <testcase classname="LogLevel enum should have expected log level values" name="LogLevel enum should have expected log level values" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Moderation Config" errors="0" failures="0" skipped="0" timestamp="2025-05-23T12:05:09" time="1.311" tests="3">
+    <testcase classname="Moderation Config configureModerationForGuest calls switchToBskyAppLabeler and additional moderation" name="Moderation Config configureModerationForGuest calls switchToBskyAppLabeler and additional moderation" time="0.001">
+    </testcase>
+    <testcase classname="Moderation Config configureModerationForAccount configures labelers and moderation authorities" name="Moderation Config configureModerationForAccount configures labelers and moderation authorities" time="0.021">
+    </testcase>
+    <testcase classname="Moderation Config configureModerationForAccount skips test labeler if not test user" name="Moderation Config configureModerationForAccount skips test labeler if not test user" time="0.001">
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     </testcase>
   </testsuite>
 </testsuites>

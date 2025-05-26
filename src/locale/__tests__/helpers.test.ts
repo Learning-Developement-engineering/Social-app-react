@@ -3,12 +3,15 @@ import {expect, test} from '@jest/globals'
 import {sanitizeAppLanguageSetting} from '#/locale/helpers'
 import * as localeHelpers from '#/locale/helpers'
 import {AppLanguage} from '#/locale/languages'
+<<<<<<< HEAD
 import {getLocalizedLanguage} from '#/locale/helpers'
 import lande from 'lande'
 import { AppBskyFeedPost } from '@atproto/api'
 
 
 
+=======
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
 describe('Language utils', () => {
   describe('code conversions', () => {
     test('code2ToCode3 converts 2-letter to 3-letter code', () => {
@@ -88,10 +91,32 @@ describe('Language utils', () => {
       expect(localeHelpers.getPostLanguage(post as any)).toBeUndefined()
     })
 
+<<<<<<< HEAD
+=======
+    test('uses lande for language detection when multiple langs', () => {
+      const post = {
+        record: {
+          text: 'Hello world',
+          langs: ['en', 'fr'],
+        },
+      }
+      // Mock lande to return probabilities with a 3-letter code for English
+      jest.spyOn(localeHelpers, 'code3ToCode2').mockImplementation((code) => {
+        if (code === 'eng') return 'en'
+        return code
+      })
+      jest.mock('lande', () => () => [['eng', 0.9], ['fra', 0.1]])
+      // but since lande is imported, we need to spy on the actual module's lande fn:
+      // Alternative approach: directly mock lande in the module before the test
+      // Here, just test existence (otherwise, complex to mock without restructuring)
+    })
+
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     test('returns undefined if no langs and no text', () => {
       const post = { record: { text: '', langs: [] } }
       expect(localeHelpers.getPostLanguage(post as any)).toBeUndefined()
     })
+<<<<<<< HEAD
 
     test('getPostLanguage skips language extraction if post is not a valid record', () => {
       const post = { record: { somethingElse: true } }
@@ -127,6 +152,8 @@ describe('Language utils', () => {
       expect(mockLande).toHaveBeenCalledWith('Bonjour')
     })
 
+=======
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
   })
 
   describe('isPostInLanguage', () => {
@@ -155,10 +182,13 @@ describe('Language utils', () => {
       const url = localeHelpers.getTranslatorLink(text, lang)
       expect(url).toBe('https://translate.google.com/?sl=auto&tl=fr&text=hello%20world')
     })
+<<<<<<< HEAD
     test('getTranslatorLink encodes special characters', () => {
       const result = localeHelpers.getTranslatorLink('¿Cómo estás?', 'en')
       expect(result).toContain('C%C3%B3mo%20est%C3%A1s')
     })
+=======
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
   })
 
   describe('fixLegacyLanguageCode', () => {
@@ -188,6 +218,7 @@ describe('Language utils', () => {
       expect(localeHelpers.findSupportedAppLanguage([])).toBe(AppLanguage.en)
       expect(localeHelpers.findSupportedAppLanguage([undefined])).toBe(AppLanguage.en)
     })
+<<<<<<< HEAD
     test('findSupportedAppLanguage handles empty strings in input', () => {
       expect(localeHelpers.findSupportedAppLanguage(['', 'en'])).toBe(AppLanguage.en)
     })
@@ -261,6 +292,14 @@ test('sanitizeAppLanguageSetting', () => {
   expect(sanitizeAppLanguageSetting('gd')).toBe(AppLanguage.gd)
   expect(sanitizeAppLanguageSetting('gl')).toBe(AppLanguage.gl)
   expect(sanitizeAppLanguageSetting('hu')).toBe(AppLanguage.hu)
+=======
+  })
+})
+
+test('sanitizeAppLanguageSetting', () => {
+  expect(sanitizeAppLanguageSetting('en')).toBe(AppLanguage.en)
+  expect(sanitizeAppLanguageSetting('el')).toBe(AppLanguage.el)
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
   expect(sanitizeAppLanguageSetting('pt-BR')).toBe(AppLanguage.pt_BR)
   expect(sanitizeAppLanguageSetting('hi')).toBe(AppLanguage.hi)
   expect(sanitizeAppLanguageSetting('id')).toBe(AppLanguage.id)
@@ -269,6 +308,7 @@ test('sanitizeAppLanguageSetting', () => {
   expect(sanitizeAppLanguageSetting('foo,en')).toBe(AppLanguage.en)
   expect(sanitizeAppLanguageSetting('vi')).toBe(AppLanguage.vi)
   expect(sanitizeAppLanguageSetting('ne')).toBe(AppLanguage.ne)
+<<<<<<< HEAD
   expect(sanitizeAppLanguageSetting('foo,bar,baz')).toBe(AppLanguage.en)
   expect(sanitizeAppLanguageSetting('ast,foo')).toBe(AppLanguage.ast)
   expect(sanitizeAppLanguageSetting('ia')).toBe(AppLanguage.ia)
@@ -278,3 +318,6 @@ test('sanitizeAppLanguageSetting', () => {
   expect(sanitizeAppLanguageSetting('ko')).toBe(AppLanguage.ko)
   expect(sanitizeAppLanguageSetting('ne')).toBe(AppLanguage.ne)
 })
+=======
+})
+>>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
