@@ -2,7 +2,7 @@ import {beforeEach, expect, jest, test} from '@jest/globals'
 
 import {Storage} from '#/storage'
 
-<<<<<<< HEAD
+
 // jest.mock('react-native-mmkv', () => ({
 //   MMKV: class MMKVMock {
 //     _store = new Map()
@@ -55,26 +55,6 @@ jest.mock('react-native-mmkv', () => {
     },
   }
 })
-
-=======
-jest.mock('react-native-mmkv', () => ({
-  MMKV: class MMKVMock {
-    _store = new Map()
-
-    set(key: string, value: unknown) {
-      this._store.set(key, value)
-    }
-
-    getString(key: string) {
-      return this._store.get(key)
-    }
-
-    delete(key: string) {
-      return this._store.delete(key)
-    }
-  },
-}))
->>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
 
 type Schema = {
   boo: boolean
@@ -135,7 +115,7 @@ test(`can store objects`, () => {
   store.set([scope, 'obj'], obj)
   expect(store.get([scope, 'obj'])).toEqual(obj)
 })
-<<<<<<< HEAD
+
 test('addOnValueChangedListener triggers callback on change', () => {
   const callback = jest.fn()
   const key = [scope, 'boo']
@@ -158,5 +138,4 @@ store.store._listeners.forEach(listener => listener(key.join(store.sep)));
 
   expect(callback).not.toHaveBeenCalled()
 })
-=======
->>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
+

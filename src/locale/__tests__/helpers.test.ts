@@ -1,17 +1,11 @@
+import { AppBskyFeedPost } from '@atproto/api'
 import {expect, test} from '@jest/globals'
+import lande from 'lande'
 
 import {sanitizeAppLanguageSetting} from '#/locale/helpers'
 import * as localeHelpers from '#/locale/helpers'
 import {AppLanguage} from '#/locale/languages'
-<<<<<<< HEAD
-import {getLocalizedLanguage} from '#/locale/helpers'
-import lande from 'lande'
-import { AppBskyFeedPost } from '@atproto/api'
 
-
-
-=======
->>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
 describe('Language utils', () => {
   describe('code conversions', () => {
     test('code2ToCode3 converts 2-letter to 3-letter code', () => {
@@ -91,8 +85,7 @@ describe('Language utils', () => {
       expect(localeHelpers.getPostLanguage(post as any)).toBeUndefined()
     })
 
-<<<<<<< HEAD
-=======
+
     test('uses lande for language detection when multiple langs', () => {
       const post = {
         record: {
@@ -111,12 +104,10 @@ describe('Language utils', () => {
       // Here, just test existence (otherwise, complex to mock without restructuring)
     })
 
->>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
     test('returns undefined if no langs and no text', () => {
       const post = { record: { text: '', langs: [] } }
       expect(localeHelpers.getPostLanguage(post as any)).toBeUndefined()
     })
-<<<<<<< HEAD
 
     test('getPostLanguage skips language extraction if post is not a valid record', () => {
       const post = { record: { somethingElse: true } }
@@ -152,8 +143,6 @@ describe('Language utils', () => {
       expect(mockLande).toHaveBeenCalledWith('Bonjour')
     })
 
-=======
->>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
   })
 
   describe('isPostInLanguage', () => {
@@ -182,13 +171,12 @@ describe('Language utils', () => {
       const url = localeHelpers.getTranslatorLink(text, lang)
       expect(url).toBe('https://translate.google.com/?sl=auto&tl=fr&text=hello%20world')
     })
-<<<<<<< HEAD
+
     test('getTranslatorLink encodes special characters', () => {
       const result = localeHelpers.getTranslatorLink('¿Cómo estás?', 'en')
       expect(result).toContain('C%C3%B3mo%20est%C3%A1s')
     })
-=======
->>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
+
   })
 
   describe('fixLegacyLanguageCode', () => {
@@ -218,7 +206,6 @@ describe('Language utils', () => {
       expect(localeHelpers.findSupportedAppLanguage([])).toBe(AppLanguage.en)
       expect(localeHelpers.findSupportedAppLanguage([undefined])).toBe(AppLanguage.en)
     })
-<<<<<<< HEAD
     test('findSupportedAppLanguage handles empty strings in input', () => {
       expect(localeHelpers.findSupportedAppLanguage(['', 'en'])).toBe(AppLanguage.en)
     })
@@ -237,7 +224,7 @@ describe('getLocalizedLanguage', () => {
     // @ts-ignore
     global.Intl.DisplayNames = jest.fn().mockImplementation(() => mockDisplayNames)
 
-    const result = getLocalizedLanguage('en', 'fr')
+    const result = localeHelpers.getLocalizedLanguage('en', 'fr')
     expect(result).toBe('Anglais') // capitalized
     expect(Intl.DisplayNames).toHaveBeenCalledWith(['fr'], expect.any(Object))
     expect(mockDisplayNames.of).toHaveBeenCalledWith('en')
@@ -250,7 +237,7 @@ describe('getLocalizedLanguage', () => {
     // @ts-ignore
     global.Intl.DisplayNames = jest.fn().mockImplementation(() => mockDisplayNames)
 
-    const result = getLocalizedLanguage('zz', 'en')
+    const result = localeHelpers.getLocalizedLanguage('zz', 'en')
     expect(result).toBeUndefined()
   })
 
@@ -260,7 +247,7 @@ describe('getLocalizedLanguage', () => {
       throw new RangeError('Unsupported locale')
     })
 
-    const result = getLocalizedLanguage('en', 'invalid-locale')
+    const result = localeHelpers.getLocalizedLanguage('en', 'invalid-locale')
     expect(result).toBeUndefined() // catch block absorbs RangeError
   })
 
@@ -270,12 +257,13 @@ describe('getLocalizedLanguage', () => {
       throw new TypeError('Something else failed')
     })
 
-    expect(() => getLocalizedLanguage('en', 'en')).toThrow(TypeError)
+    expect(() => localeHelpers.getLocalizedLanguage('en', 'en')).toThrow(TypeError)
   })
 })
 test('sanitizeAppLanguageSetting', () => {
   expect(sanitizeAppLanguageSetting('en')).toBe(AppLanguage.en)
   expect(sanitizeAppLanguageSetting('an')).toBe(AppLanguage.an)
+  expect(sanitizeAppLanguageSetting('ast')).toBe(AppLanguage.ast)
   expect(sanitizeAppLanguageSetting('ca')).toBe(AppLanguage.ca)
   expect(sanitizeAppLanguageSetting('cy')).toBe(AppLanguage.cy)
   expect(sanitizeAppLanguageSetting('da')).toBe(AppLanguage.da)
@@ -291,33 +279,10 @@ test('sanitizeAppLanguageSetting', () => {
   expect(sanitizeAppLanguageSetting('ga')).toBe(AppLanguage.ga)
   expect(sanitizeAppLanguageSetting('gd')).toBe(AppLanguage.gd)
   expect(sanitizeAppLanguageSetting('gl')).toBe(AppLanguage.gl)
-  expect(sanitizeAppLanguageSetting('hu')).toBe(AppLanguage.hu)
-=======
-  })
-})
-
-test('sanitizeAppLanguageSetting', () => {
-  expect(sanitizeAppLanguageSetting('en')).toBe(AppLanguage.en)
-  expect(sanitizeAppLanguageSetting('el')).toBe(AppLanguage.el)
->>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
-  expect(sanitizeAppLanguageSetting('pt-BR')).toBe(AppLanguage.pt_BR)
   expect(sanitizeAppLanguageSetting('hi')).toBe(AppLanguage.hi)
-  expect(sanitizeAppLanguageSetting('id')).toBe(AppLanguage.id)
-  expect(sanitizeAppLanguageSetting('foo')).toBe(AppLanguage.en)
-  expect(sanitizeAppLanguageSetting('en,foo')).toBe(AppLanguage.en)
-  expect(sanitizeAppLanguageSetting('foo,en')).toBe(AppLanguage.en)
-  expect(sanitizeAppLanguageSetting('vi')).toBe(AppLanguage.vi)
-  expect(sanitizeAppLanguageSetting('ne')).toBe(AppLanguage.ne)
-<<<<<<< HEAD
-  expect(sanitizeAppLanguageSetting('foo,bar,baz')).toBe(AppLanguage.en)
-  expect(sanitizeAppLanguageSetting('ast,foo')).toBe(AppLanguage.ast)
+  expect(sanitizeAppLanguageSetting('hu')).toBe(AppLanguage.hu)
   expect(sanitizeAppLanguageSetting('ia')).toBe(AppLanguage.ia)
   expect(sanitizeAppLanguageSetting('it')).toBe(AppLanguage.it)
-  expect(sanitizeAppLanguageSetting('ja')).toBe(AppLanguage.ja)
-  expect(sanitizeAppLanguageSetting('km')).toBe(AppLanguage.km)
-  expect(sanitizeAppLanguageSetting('ko')).toBe(AppLanguage.ko)
-  expect(sanitizeAppLanguageSetting('ne')).toBe(AppLanguage.ne)
-})
-=======
-})
->>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
+
+  })
+

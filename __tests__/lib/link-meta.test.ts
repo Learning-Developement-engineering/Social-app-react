@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // import { getLikelyType, LikelyType } from "#/lib/link-meta/link-meta"
 // import { resolveShortLink } from "#/lib/link-meta/resolve-short-link"
 // import { logger } from "#/logger"
@@ -86,112 +86,7 @@
 //     expect(logger.error).toHaveBeenCalledWith('Failed to resolve short link', {safeMessage: expect.any(DOMException)})
 //   })
 // })
-import {getLinkMeta, LikelyType} from '#/lib/link-meta/link-meta'
-import {BskyAgent} from '@atproto/api'
 
-jest.mock('#/lib/strings/url-helpers', () => ({
-  isBskyAppUrl: jest.fn(),
-}))
-
-jest.mock('#/lib/strings/starter-pack', () => ({
-  parseStarterPackUri: jest.fn(),
-}))
-
-jest.mock('#/lib/strings/embed-player', () => ({
-  getGiphyMetaUri: jest.fn(),
-}))
-
-const mockFetch = jest.fn()
-global.fetch = mockFetch
-
-describe('getLinkMeta - 100% coverage', () => {
-  const mockAgent = {
-    service: { toString: () => 'https://agent.service/' },
-  } as unknown as BskyAgent
-
-  const { isBskyAppUrl } = require('#/lib/strings/url-helpers')
-  const { parseStarterPackUri } = require('#/lib/strings/starter-pack')
-  const { getGiphyMetaUri } = require('#/lib/strings/embed-player')
-
-  beforeEach(() => {
-    jest.clearAllMocks()
-  })
-
-  it('returns AtpData for BskyApp URL without starter pack', async () => {
-    isBskyAppUrl.mockReturnValue(true)
-    parseStarterPackUri.mockReturnValue(undefined)
-
-    const result = await getLinkMeta(mockAgent, 'https://bsky.app/profile')
-    expect(result).toEqual({
-      likelyType: LikelyType.AtpData,
-      url: 'https://bsky.app/profile',
-    })
-  })
-
-
-  it('rewrites Giphy URL', async () => {
-    isBskyAppUrl.mockReturnValue(false)
-    getGiphyMetaUri.mockReturnValue('https://giphy.com/meta')
-
-    mockFetch.mockResolvedValueOnce({
-      json: () =>
-        Promise.resolve({
-          title: 'Gif Title',
-          description: 'Funny gif',
-          image: 'img.gif',
-          error: '',
-        }),
-    })
-
-    const result = await getLinkMeta(mockAgent, 'https://giphy.com/somegif')
-
-    expect(result.url).toBe('https://giphy.com/meta')
-    expect(result.title).toBe('Gif Title')
-    expect(result.image).toBe('img.gif')
-    expect(result.description).toBe('Funny gif')
-    expect(result.likelyType).toBe(LikelyType.HTML)
-  })
-
-  it('handles non-HTML link (e.g. image)', async () => {
-    isBskyAppUrl.mockReturnValue(false)
-    getGiphyMetaUri.mockReturnValue(null)
-
-    // Force a URL with image extension
-    const result = await getLinkMeta(mockAgent, 'https://example.com/image.jpg')
-    expect(result.likelyType).toBe(LikelyType.Image)
-    expect(result.title).toBeUndefined()
-  })
-
-  it('fetch throws error and returns meta with error field', async () => {
-    isBskyAppUrl.mockReturnValue(false)
-    getGiphyMetaUri.mockReturnValue(null)
-
-    mockFetch.mockRejectedValue(new Error('Fetch failed'))
-
-    const result = await getLinkMeta(mockAgent, 'https://example.com/page.html')
-    expect(result.likelyType).toBe(LikelyType.HTML)
-    expect(result.error).toContain('Fetch failed')
-  })
-
-  it('handles error field in proxy response body', async () => {
-    isBskyAppUrl.mockReturnValue(false)
-    getGiphyMetaUri.mockReturnValue(null)
-
-    mockFetch.mockResolvedValueOnce({
-      json: () =>
-        Promise.resolve({
-          error: 'Proxy failed',
-          title: '',
-          description: '',
-          image: '',
-        }),
-    })
-
-    const result = await getLinkMeta(mockAgent, 'https://example.com/page.html')
-    expect(result.error).toContain('Proxy failed')
-  })
-})
-=======
 import { getLikelyType, LikelyType } from "#/lib/link-meta/link-meta"
 import { resolveShortLink } from "#/lib/link-meta/resolve-short-link"
 import { logger } from "#/logger"
@@ -279,4 +174,3 @@ describe('resolveShortLink', () => {
     expect(logger.error).toHaveBeenCalledWith('Failed to resolve short link', {safeMessage: expect.any(DOMException)})
   })
 })
->>>>>>> 34dc5eca2ebfd88b2c1a084878e8a88c89866740
