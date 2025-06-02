@@ -51,6 +51,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Important for branch detection
 
       - name: Download coverage artifact
         uses: actions/download-artifact@v4
@@ -63,8 +65,11 @@ jobs:
         with:
           file: ./coverage/lcov.info
           flags: unittests
-          name: codecov-umbrella
+          name: coverage-${{ github.ref_name }}
           fail_ci_if_error: false
           verbose: true
+          override_branch: ${{ github.ref_name }}
+          override_build: ${{ github.run_number }}-${{ github.ref_name }}
+          override_commit: ${{ github.sha }}
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
