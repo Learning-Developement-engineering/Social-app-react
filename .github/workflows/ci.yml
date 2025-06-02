@@ -81,8 +81,14 @@ jobs:
           pwd
           ls -la
           ls -la coverage/
-          echo "=== LCOV.INFO CONTENT ==="
-          head -50 coverage/lcov.info || echo "lcov.info not found"
+          echo "=== LCOV.INFO CONTENT (first 100 lines) ==="
+          head -100 coverage/lcov.info || echo "lcov.info not found"
+          echo "=== COVERAGE SUMMARY ==="
+          cat coverage/lcov-report/index.html | grep -E "(Functions|Lines|Statements|Branches)" || echo "No HTML report found"
+          echo "=== FILES INCLUDED IN COVERAGE ==="
+          grep -E "^SF:" coverage/lcov.info | head -20 || echo "No source files found"
+          echo "=== COVERAGE STATISTICS ==="
+          grep -E "^(LF|LH|BRF|BRH|FNF|FNH):" coverage/lcov.info | head -20 || echo "No statistics found"
           echo "=== BRANCH INFO ==="
           echo "Branch: ${{ github.ref_name }}"
           echo "Commit: ${{ github.sha }}"
@@ -101,5 +107,20 @@ jobs:
           override_commit: ${{ github.sha }}
           override_pr: ${{ github.event.number }}
           token: ${{ secrets.CODECOV_TOKEN }}
+          root_dir: .
+          working_directory: .
+          directory: ./coverage
+          exclude: |
+            **/node_modules/**
+            **/dist/**
+            **/build/**
+            **/*.test.js
+            **/*.test.jsx
+            **/*.test.ts
+            **/*.test.tsx
+            **/*.spec.js
+            **/*.spec.jsx
+            **/*.spec.ts
+            **/*.spec.tsx
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}

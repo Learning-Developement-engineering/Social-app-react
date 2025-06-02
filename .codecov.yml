@@ -2,6 +2,7 @@ codecov:
   require_ci_to_pass: yes
   branch: main
   max_report_age: off
+  disable_default_path_fixes: false
 
 coverage:
   precision: 2
@@ -32,6 +33,30 @@ parsers:
       method: no
       macro: no
 
+# Match SonarQube exclusions
+ignore:
+  - "**/*.test.js"
+  - "**/*.test.jsx"
+  - "**/*.test.ts"  
+  - "**/*.test.tsx"
+  - "**/*.spec.js"
+  - "**/*.spec.jsx"
+  - "**/*.spec.ts"
+  - "**/*.spec.tsx"
+  - "**/node_modules/**"
+  - "**/dist/**"
+  - "**/build/**"
+  - "**/coverage/**"
+  - "**/*.config.js"
+  - "**/*.config.ts"
+  - "**/public/**"
+  - "**/stories/**"
+  - "**/*.stories.*"
+
+# Only include source files like SonarQube
+fixes:
+  - "src/::"
+
 comment:
   layout: "reach,diff,flags,files,footer"
   behavior: default
@@ -47,3 +72,7 @@ flags:
   unittests:
     paths:
       - src/
+    ignore:
+      - "src/**/*.test.*"
+      - "src/**/*.spec.*"
+      - "src/**/*.stories.*"
