@@ -25,5 +25,3 @@ export async function resolveShortLink(shortLink: string) {
     clearTimeout(to)
   }
 }
-
-

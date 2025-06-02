@@ -1,0 +1,43 @@
+stages:
+  - install
+  - test
+  - sonarqube
+
+install_dependencies:
+  stage: install
+  image: node:20
+  script:
+    - yarn install --frozen-lockfile
+  artifacts:
+    paths:
+      - node_modules/
+
+test:
+  stage: test
+  image: node:20
+  script:
+    - yarn test --coverage
+  artifacts:
+    paths:
+      - coverage/
+
+sonarqube:
+  stage: sonarqube
+  image: sonarsource/sonar-scanner-cli:latest
+  variables:
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"
+    GIT_DEPTH: "0"
+  script:
+    - pwd
+    - ls
+    - sonar-scanner 
+      -Dsonar.projectKey=in.cmss.internal:social-app-react 
+      -Dsonar.projectName="cmss internal social-app-react" 
+      -Dsonar.host.url=$SONARQUBE_SERVER 
+      -Dsonar.login=$SONARQUBE_TOKEN 
+      -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+      -Dsonar.sources=src
+      -Dsonar.coverage.exclusions=
+  dependencies:
+    - test
+  allow_failure: false

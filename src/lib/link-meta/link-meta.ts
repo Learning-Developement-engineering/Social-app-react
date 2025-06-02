@@ -35,11 +35,11 @@ export async function getLinkMeta(
       url,
     }
   }
-  
+
   let urlp
   try {
     urlp = new URL(url)
-    
+
     // Get Giphy meta uri if this is any form of giphy link
     const giphyMetaUri = getGiphyMetaUri(urlp)
     if (giphyMetaUri) {
@@ -61,27 +61,27 @@ export async function getLinkMeta(
   if (likelyType !== LikelyType.HTML) {
     return meta
   }
-  
+
   try {
     const controller = new AbortController()
     const to = setTimeout(() => controller.abort(), timeout || 5e3)
-    
+
     const response = await fetch(
       `${LINK_META_PROXY(agent.service.toString() || '')}${encodeURIComponent(
         url,
       )}`,
       {signal: controller.signal},
     )
-    
+
     const body = await response.json()
     clearTimeout(to)
-    
+
     const {description, error, image, title} = body
-    
+
     if (error !== '') {
       throw new Error(error)
     }
-    
+
     meta.description = description
     meta.image = image
     meta.title = title
@@ -90,7 +90,7 @@ export async function getLinkMeta(
     console.error(e)
     meta.error = e instanceof Error ? e.toString() : 'Failed to fetch link'
   }
-  
+
   return meta
 }
 
@@ -102,7 +102,7 @@ export function getLikelyType(url: URL | string): LikelyType {
       return LikelyType.Other
     }
   }
-  
+
   const ext = url.pathname.split('.').pop() || ''
   if (ext === 'html' || ext === 'htm' || ext === 'php') {
     return LikelyType.HTML

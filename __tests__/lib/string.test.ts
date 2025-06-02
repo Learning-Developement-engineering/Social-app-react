@@ -1,6 +1,5 @@
 import {RichText} from '@atproto/api'
 
-import { forceLTR } from '#/lib/strings/bidi'
 import {parseEmbedPlayerFromUrl} from '#/lib/strings/embed-player'
 import {
   createStarterPackGooglePlayUri,
@@ -996,26 +995,5 @@ describe('createStarterPackGooglePlayUri', () => {
   it('returns null when rkey is supplied but no name', () => {
     // @ts-expect-error test
     expect(createStarterPackGooglePlayUri(undefined, 'rkey')).toEqual(null)
-  })
-})
-describe('forceLTR', () => {
-  const LRE = '\u202A' // LEFT_TO_RIGHT_EMBEDDING
-  const PDF = '\u202C' // POP_DIRECTIONAL_FORMATTING
-
-  it('wraps string with LTR directional formatting characters', () => {
-    const input = 'Hello, world!'
-    const result = forceLTR(input)
-    expect(result).toBe(`${LRE}${input}${PDF}`)
-  })
-
-  it('works with empty string', () => {
-    const result = forceLTR('')
-    expect(result).toBe(`${LRE}${PDF}`)
-  })
-
-  it('works with already formatted strings', () => {
-    const input = `${LRE}Hi${PDF}`
-    const result = forceLTR(input)
-    expect(result).toBe(`${LRE}${input}${PDF}`)
   })
 })

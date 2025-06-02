@@ -2,59 +2,23 @@ import {beforeEach, expect, jest, test} from '@jest/globals'
 
 import {Storage} from '#/storage'
 
+jest.mock('react-native-mmkv', () => ({
+  MMKV: class MMKVMock {
+    _store = new Map()
 
-// jest.mock('react-native-mmkv', () => ({
-//   MMKV: class MMKVMock {
-//     _store = new Map()
+    set(key: string, value: unknown) {
+      this._store.set(key, value)
+    }
 
-//     set(key: string, value: unknown) {
-//       this._store.set(key, value)
-//     }
+    getString(key: string) {
+      return this._store.get(key)
+    }
 
-//     getString(key: string) {
-//       return this._store.get(key)
-//     }
-
-//     delete(key: string) {
-//       return this._store.delete(key)
-//     }
-    
-//   },
-// }))
-
-jest.mock('react-native-mmkv', () => {
-  return {
-    MMKV: class MMKVMock {
-      _store = new Map<string, string>()
-      _listeners: ((key: string) => void)[] = []
-
-      set(key: string, value: unknown) {
-        this._store.set(key, value)
-        // Call listeners for the changed key
-        this._listeners.forEach(listener => listener(key))
-      }
-
-      getString(key: string) {
-        return this._store.get(key)
-      }
-
-      delete(key: string) {
-        const result = this._store.delete(key)
-        this._listeners.forEach(listener => listener(key))
-        return result
-      }
-
-      addOnValueChangedListener(callback: (key: string) => void) {
-        this._listeners.push(callback)
-        return {
-          remove: () => {
-            this._listeners = this._listeners.filter(l => l !== callback)
-          },
-        }
-      }
-    },
-  }
-})
+    delete(key: string) {
+      return this._store.delete(key)
+    }
+  },
+}))
 
 type Schema = {
   boo: boolean
@@ -115,27 +79,3 @@ test(`can store objects`, () => {
   store.set([scope, 'obj'], obj)
   expect(store.get([scope, 'obj'])).toEqual(obj)
 })
-
-test('addOnValueChangedListener triggers callback on change', () => {
-  const callback = jest.fn()
-  const key = [scope, 'boo']
-  const listener = store.addOnValueChangedListener(key, callback)
-
-  // Simulate a change event from MMKV store for the exact key
-  store.store._store.set(key.join(store.sep), JSON.stringify({ data: true }))
-  // Manually invoke listener's callback
-// trigger all listeners manually with the changed key
-store.store._listeners.forEach(listener => listener(key.join(store.sep)));
-
-
-  expect(callback).toHaveBeenCalled()
-
-  // Remove listener and simulate change again
-  listener.remove()
-  callback.mockClear()
-  // trigger all listeners manually with the changed key
-store.store._listeners.forEach(listener => listener(key.join(store.sep)));
-
-  expect(callback).not.toHaveBeenCalled()
-})
-

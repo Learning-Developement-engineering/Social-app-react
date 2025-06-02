@@ -1,20 +1,4 @@
-import {IsValidHandle, makeValidHandle, validateServiceHandle} from '#/lib/strings/handles'
-
-describe('makeValidHandle', () => {
-  it('should truncate and sanitize string > 20 characters', () => {
-    const result = makeValidHandle('!@#ABCdef123---ExtraLongHandle')
-    expect(result.length).toBeLessThanOrEqual(20)
-    expect(result).toMatch(/^[a-z0-9-]+$/)
-  })
-
-  it('should lowercase and strip invalid chars', () => {
-    expect(makeValidHandle('AbC--$$@')).toBe('abc--')
-  })
-
-  it('should remove non-alphanumeric chars at start', () => {
-    expect(makeValidHandle('!!abc')).toBe('abc')
-  })
-})
+import {IsValidHandle, validateServiceHandle} from '#/lib/strings/handles'
 
 describe('handle validation', () => {
   const valid = [

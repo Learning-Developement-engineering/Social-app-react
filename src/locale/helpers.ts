@@ -32,7 +32,7 @@ export function code3ToCode2Strict(lang: string): string | undefined {
   return undefined
 }
 
-export function getLocalizedLanguage(
+function getLocalizedLanguage(
   langCode: string,
   appLang: string,
 ): string | undefined {
