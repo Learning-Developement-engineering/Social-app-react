@@ -43,18 +43,27 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch full history for better coverage analysis
       - name: Download coverage artifact
         uses: actions/download-artifact@v4
         with:
           name: coverage
           path: coverage/
+      - name: List coverage files (debug)
+        run: |
+          echo "Coverage directory contents:"
+          find coverage/ -type f -name "*.info" -o -name "*.xml" -o -name "*.json" | head -10
+          echo "Coverage file sizes:"
+          ls -la coverage/
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
-          file: ./coverage/lcov.info
+          directory: ./coverage/
           flags: unittests
           name: codecov-umbrella
-          fail_ci_if_error: false
+          fail_ci_if_error: true  # Changed to true to catch issues
           verbose: true
+          token: ${{ secrets.CODECOV_TOKEN }}
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
