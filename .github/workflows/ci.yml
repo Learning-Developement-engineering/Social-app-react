@@ -7,59 +7,43 @@ on:
 jobs:
   install:
     runs-on: ubuntu-latest
-    container:
-      image: node:20
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Cache node_modules
-        uses: actions/cache@v4
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-modules-
-
   test:
     runs-on: ubuntu-latest
-    container:
-      image: node:20
     needs: install
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Restore node_modules cache
-        uses: actions/cache@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          path: node_modules
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-modules-
+          node-version: '20'
+          cache: 'yarn'
 
-      - name: Install dependencies (if cache miss)
+      - name: Install dependencies
         run: yarn install --frozen-lockfile
 
       - name: Run tests with coverage
         run: yarn test --coverage
 
-      - name: Debug coverage files
-        run: |
-          pwd
-          ls -la
-          ls -la coverage/ || echo "Coverage directory not found"
-          cat coverage/lcov.info | head -20 || echo "lcov.info not found or empty"
-
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v4
         with:
-          name: coverage-${{ github.sha }}
+          name: coverage
           path: coverage/
-          retention-days: 1
 
   codecov:
     runs-on: ubuntu-latest
@@ -67,60 +51,20 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Download coverage artifact
         uses: actions/download-artifact@v4
         with:
-          name: coverage-${{ github.sha }}
+          name: coverage
           path: coverage/
-
-      - name: Debug coverage before upload
-        run: |
-          pwd
-          ls -la
-          ls -la coverage/
-          echo "=== LCOV.INFO CONTENT (first 100 lines) ==="
-          head -100 coverage/lcov.info || echo "lcov.info not found"
-          echo "=== COVERAGE SUMMARY ==="
-          cat coverage/lcov-report/index.html | grep -E "(Functions|Lines|Statements|Branches)" || echo "No HTML report found"
-          echo "=== FILES INCLUDED IN COVERAGE ==="
-          grep -E "^SF:" coverage/lcov.info | head -20 || echo "No source files found"
-          echo "=== COVERAGE STATISTICS ==="
-          grep -E "^(LF|LH|BRF|BRH|FNF|FNH):" coverage/lcov.info | head -20 || echo "No statistics found"
-          echo "=== BRANCH INFO ==="
-          echo "Branch: ${{ github.ref_name }}"
-          echo "Commit: ${{ github.sha }}"
-          echo "Run: ${{ github.run_number }}"
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
-          files: ./coverage/lcov.info
-          flags: unittests,${{ github.ref_name }}
-          name: coverage-${{ github.ref_name }}-${{ github.run_number }}
-          fail_ci_if_error: true
+          file: ./coverage/lcov.info
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: false
           verbose: true
-          override_branch: ${{ github.ref_name }}
-          override_build: ${{ github.run_number }}
-          override_commit: ${{ github.sha }}
-          override_pr: ${{ github.event.number }}
-          token: ${{ secrets.CODECOV_TOKEN }}
-          root_dir: .
-          working_directory: .
-          directory: ./coverage
-          exclude: |
-            **/node_modules/**
-            **/dist/**
-            **/build/**
-            **/*.test.js
-            **/*.test.jsx
-            **/*.test.ts
-            **/*.test.tsx
-            **/*.spec.js
-            **/*.spec.jsx
-            **/*.spec.ts
-            **/*.spec.tsx
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
