@@ -1,9 +1,7 @@
 codecov:
   require_ci_to_pass: yes
-  branch: main
   max_report_age: off
   disable_default_path_fixes: false
-
 coverage:
   precision: 2
   round: down
@@ -15,16 +13,13 @@ coverage:
         target: auto
         threshold: 1%
         base: auto
-        branches:
-          - main
-          - develop
-          - release.*
+        branches: null  # Allow all branches
     patch:
       default:
         target: auto
         threshold: 1%
         base: auto
-
+        branches: null  # Allow all branches
 parsers:
   gcov:
     branch_detection:
@@ -32,7 +27,6 @@ parsers:
       loop: yes  
       method: no
       macro: no
-
 # Match SonarQube exclusions
 ignore:
   - "**/*.test.js"
@@ -52,22 +46,18 @@ ignore:
   - "**/public/**"
   - "**/stories/**"
   - "**/*.stories.*"
-
 # Only include source files like SonarQube
 fixes:
   - "src/::"
-
 comment:
   layout: "reach,diff,flags,files,footer"
   behavior: default
   require_changes: false
   require_base: no
   require_head: yes
-  branches: null
-
+  branches: null  # Allow comments on all branches
 github_checks:
   annotations: true
-
 flags:
   unittests:
     paths:
